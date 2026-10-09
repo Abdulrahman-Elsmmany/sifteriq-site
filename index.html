@@ -1,0 +1,248 @@
+<!doctype html>
+<!-- Not legal advice; reviewed against YouTube API Services Developer Policies on 2026-10-08 -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self' data: https://developers.google.com; base-uri 'none'; form-action 'none'">
+  <title>Sifteriq</title>
+  <meta name="description" content="Sifteriq is an AI-assisted organizer for your own YouTube Watch Later list. It is in private development and not yet available to the public.">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#07070a">
+  <link rel="canonical" href="https://abdulrahman-elsmmany.github.io/sifteriq-site/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='1' y='1' width='30' height='30' rx='9' fill='%230d0d12' stroke='%232a2a36'/%3E%3Crect x='8' y='10' width='16' height='2.6' rx='1.3' fill='%23c6f432'/%3E%3Crect x='10.5' y='14.7' width='11' height='2.6' rx='1.3' fill='%23c6f432' fill-opacity='.8'/%3E%3Crect x='13.5' y='19.4' width='5' height='2.6' rx='1.3' fill='%23c6f432' fill-opacity='.6'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./" aria-label="Sifteriq home">
+        <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <rect x="1" y="1" width="30" height="30" rx="9" fill="#0d0d12" stroke="#2a2a36"/>
+          <rect x="8" y="10" width="16" height="2.6" rx="1.3" fill="#c6f432"/>
+          <rect x="10.5" y="14.7" width="11" height="2.6" rx="1.3" fill="#c6f432" fill-opacity=".8"/>
+          <rect x="13.5" y="19.4" width="5" height="2.6" rx="1.3" fill="#c6f432" fill-opacity=".6"/>
+        </svg>
+        <span class="brand-name">Sifteriq</span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <span class="status-pill"><span class="dot" aria-hidden="true"></span>In private development</span>
+          <h1 id="hero-title" class="text-fade">A calmer way to clear your Watch Later.</h1>
+          <p class="lead">Sifteriq is an AI-assisted organizer for your own YouTube Watch Later list. It imports the videos you saved, adds their details from YouTube, ranks them against a goal you write, and helps you clean up the rest.</p>
+          <div class="callout" role="note">
+            <span class="dot" aria-hidden="true"></span>
+            <p><strong>Sifteriq is in private development and is not yet available to the public.</strong> There is no public sign-up yet.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="privacy.html">Read the Privacy Policy</a>
+            <a class="btn btn-ghost" href="terms.html">Read the Terms</a>
+          </div>
+        </div>
+
+        <div class="preview glass" role="img" aria-label="Illustration: saved videos sorted into lanes such as Watch now, This week, Course, Reference and Skip, each with a score from Sifteriq.">
+          <div class="preview-head">
+            <span class="eyebrow">Review</span>
+            <span class="eyebrow">Score</span>
+          </div>
+          <p class="preview-goal">
+            <span class="preview-goal-label">Your goal</span>
+            <span class="preview-goal-text">Get better at system design this quarter</span>
+          </p>
+          <ul class="preview-rows">
+            <li class="preview-row"><span class="lane lane-now">Watch now</span><span class="bars w-90"><span></span><span></span></span><span class="score">92</span></li>
+            <li class="preview-row"><span class="lane lane-week">This week</span><span class="bars w-75"><span></span><span></span></span><span class="score">81</span></li>
+            <li class="preview-row"><span class="lane lane-course">Course</span><span class="bars w-82"><span></span><span></span></span><span class="score">74</span></li>
+            <li class="preview-row"><span class="lane lane-reference">Reference</span><span class="bars w-68"><span></span><span></span></span><span class="score">58</span></li>
+            <li class="preview-row"><span class="lane lane-skip">Skip</span><span class="bars w-55"><span></span><span></span></span><span class="score">17</span></li>
+          </ul>
+          <p class="preview-note">Lanes and scores are Sifteriq's own estimates, not data from YouTube.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="attribution" aria-labelledby="attribution-title">
+      <div class="wrap">
+        <div class="attribution-inner">
+          <a class="badge-link" href="https://www.youtube.com/">
+            <img src="https://developers.google.com/static/youtube/images/developed-with-youtube-sentence-case-light.png" alt="Developed with YouTube" width="202" height="72" referrerpolicy="no-referrer" decoding="async">
+          </a>
+          <div class="attribution-copy">
+            <h2 id="attribution-title" class="visually-hidden">YouTube API Services</h2>
+            <p><strong>Sifteriq uses YouTube API Services.</strong> By using Sifteriq, you agree to be bound by the YouTube Terms of Service.</p>
+            <ul class="attribution-links">
+              <li><a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a></li>
+              <li><a href="http://www.google.com/policies/privacy">Google Privacy Policy</a></li>
+              <li><a href="privacy.html">Sifteriq Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">How it works</span>
+          <h2 id="how-title" class="text-fade">From a long backlog to a short list</h2>
+          <p>Sifteriq works with the videos you choose to import. It reads their public details, never the videos themselves, and it changes nothing on YouTube unless you turn on write access and start one of the actions listed below.</p>
+        </div>
+        <ol class="grid-4">
+          <li class="card glass">
+            <span class="step-num" aria-hidden="true">01</span>
+            <h3>Import</h3>
+            <p>Upload your Watch Later export from Google Takeout, paste video links, or connect one YouTube playlist you choose with read-only access.</p>
+          </li>
+          <li class="card glass">
+            <span class="step-num" aria-hidden="true">02</span>
+            <h3>Enrich</h3>
+            <p>Sifteriq looks up each video's public details through the YouTube Data API, such as title, channel, description, tags, duration and thumbnail.</p>
+          </li>
+          <li class="card glass">
+            <span class="step-num" aria-hidden="true">03</span>
+            <h3>Triage by your goal</h3>
+            <p>If you turn it on, an AI model run by a third-party provider, reached through OpenRouter, reads each video's title, channel, duration, publish year, tags and the start of its description next to a goal you write and suggests a lane for each video, such as watch now, this week, reference or skip.</p>
+          </li>
+          <li class="card glass">
+            <span class="step-num" aria-hidden="true">04</span>
+            <h3>Clean up</h3>
+            <p>Review the suggestions, keep notes, build a watch plan and export your list. If you allow it, Sifteriq removes the videos you confirm from the playlist you connected.</p>
+          </li>
+        </ol>
+        <p class="note">Sifteriq's recommendations, priority scores, topics and reasons are generated independently by Sifteriq and are not sourced directly from YouTube's API. They are estimates and can be wrong.</p>
+      </div>
+    </section>
+
+    <section class="section" id="google" aria-labelledby="google-title">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Google access</span>
+          <h2 id="google-title" class="text-fade">What Sifteriq asks of Google, and why</h2>
+          <p>You sign in to Sifteriq with an email address and password, not with Google. Connecting a YouTube account is optional: a Takeout file or pasted links work without it.</p>
+        </div>
+        <ul class="grid-2">
+          <li class="card glass">
+            <span class="scope">youtube.readonly</span>
+            <h3>Read-only access</h3>
+            <p>Used to import the playlist you pick:</p>
+            <ul class="tick-list">
+              <li>Read your channel's name, so you can see which account is connected.</li>
+              <li>List your playlists, so you can choose one. Only the chosen playlist is saved.</li>
+              <li>Read the videos in that playlist, and check it for new ones.</li>
+            </ul>
+          </li>
+          <li class="card glass">
+            <span class="scope">youtube</span>
+            <h3>Write access, only if you turn it on</h3>
+            <p>Used for the same reads, plus only these three actions:</p>
+            <ul class="tick-list">
+              <li>Create a private playlist named "Sifteriq Inbox" when you ask for one.</li>
+              <li>Remove videos you select and confirm from the playlist you connected.</li>
+              <li>Undo a removal you just made.</li>
+            </ul>
+          </li>
+        </ul>
+        <p class="note">Sifteriq never uploads, rates or comments on videos, never downloads videos, and never changes anything else in your account. You can disconnect in Sifteriq at any time, or remove its access on your <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>.</p>
+      </div>
+    </section>
+
+    <section class="section" id="data" aria-labelledby="data-title">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Your data</span>
+          <h2 id="data-title" class="text-fade">Your data, briefly</h2>
+          <p>The <a href="privacy.html">Privacy Policy</a> has the details. In short:</p>
+        </div>
+        <ul class="grid-3">
+          <li class="card glass">
+            <h3>No ads, no tracking</h3>
+            <p>Sifteriq does not sell your data, show ads, or use analytics or tracking cookies.</p>
+          </li>
+          <li class="card glass">
+            <h3>Only what triage needs</h3>
+            <p>If you turn on AI triage, the <a href="privacy.html#ai">third-party AI provider</a> receives video details and your goal, never your name, email address or notes.</p>
+          </li>
+          <li class="card glass">
+            <h3>Yours to remove</h3>
+            <p>Export your library, clear it or delete your account. Clearing your library or deleting your account deletes the data involved within 7 days, except for the records listed in the <a href="privacy.html#delete">Privacy Policy</a>. We keep records that show a deletion happened. You can disconnect YouTube at any time; that ends Sifteriq's access and deletes the videos imported through it, normally at once.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="about glass">
+          <div>
+            <span class="eyebrow">Who builds Sifteriq</span>
+            <h2 id="about-title" class="text-fade">An independent project by Abdulrahman Elsmmany</h2>
+            <p>Sifteriq is built and run by Abdulrahman Elsmmany, an individual developer. It is in private development: features may change before it opens to the public.</p>
+          </div>
+          <div>
+            <p class="eyebrow">Contact</p>
+            <p class="contact-line"><a href="mailto:abdoelsmany66@gmail.com">abdoelsmany66@gmail.com</a></p>
+            <p>Questions about Sifteriq, its privacy practices or these pages are welcome.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="./">
+            <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+              <rect x="1" y="1" width="30" height="30" rx="9" fill="#0d0d12" stroke="#2a2a36"/>
+              <rect x="8" y="10" width="16" height="2.6" rx="1.3" fill="#c6f432"/>
+              <rect x="10.5" y="14.7" width="11" height="2.6" rx="1.3" fill="#c6f432" fill-opacity=".8"/>
+              <rect x="13.5" y="19.4" width="5" height="2.6" rx="1.3" fill="#c6f432" fill-opacity=".6"/>
+            </svg>
+            <span>Sifteriq</span>
+          </a>
+          <p>Built by Abdulrahman Elsmmany, an independent developer. In private development and not yet available to the public.</p>
+        </div>
+        <nav aria-labelledby="footer-sifteriq">
+          <h2 id="footer-sifteriq">Sifteriq</h2>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="footer-youtube">
+          <h2 id="footer-youtube">YouTube and Google</h2>
+          <ul>
+            <li><a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a></li>
+            <li><a href="http://www.google.com/policies/privacy">Google Privacy Policy</a></li>
+            <li><a href="https://security.google.com/settings/security/permissions">Revoke access in your Google account</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="mailto:abdoelsmany66@gmail.com">abdoelsmany66@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <p>Sifteriq uses YouTube API Services. Sifteriq is an independent app. It is not affiliated with, endorsed by, or sponsored by YouTube or Google. YouTube is a trademark of Google LLC.</p>
+        <p>&copy; 2026 Abdulrahman Elsmmany</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
