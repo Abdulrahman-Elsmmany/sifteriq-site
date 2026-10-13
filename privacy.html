@@ -43,7 +43,7 @@
         <h1 class="text-fade">Privacy Policy</h1>
         <p class="doc-meta">
           <span>Effective date: <strong><time datetime="2026-10-08">8 October 2026</time></strong></span>
-          <span>Last updated: <strong><time datetime="2026-10-09">9 October 2026</time></strong></span>
+          <span>Last updated: <strong><time datetime="2026-10-13">13 October 2026</time></strong></span>
         </p>
       </header>
 
@@ -60,7 +60,7 @@
         <ul class="tick-list">
           <li>Sifteriq helps you organize your own YouTube Watch Later list. It uses YouTube API Services, and Google's Privacy Policy applies to data that YouTube processes.</li>
           <li>We store your email address, the videos you import and their public YouTube details, what you write in Sifteriq, and AI results.</li>
-          <li>If you turn on AI triage, we send video details and your goal to an AI provider to rank your videos. We never send your name, email address, notes or account identifiers. The AI model providers keep none of it after responding. OpenRouter, which forwards each request, sorts a small sample of requests into anonymous categories for its public usage rankings (see <a href="#ai-who">Who processes it</a>).</li>
+          <li>If you turn on AI triage, we send video details and your goal to an AI provider to rank your videos. If you agree to our AI notice of 13 October 2026, we also send them to AI providers to summarize and compare your videos, rank them for your goal and check possible duplicates, including to DeepInfra and Nebius, which turn text into embeddings (see <a href="#ai-more">Embeddings, video summaries and goal ranking</a>). We never send your name, email address, notes or account identifiers. The AI model providers keep none of it after responding. OpenRouter, which forwards each request, sorts a small sample of requests into anonymous categories for its public usage rankings (see <a href="#ai-who">Who processes it</a>).</li>
           <li>We do not sell your data, show ads, or use analytics or tracking cookies.</li>
           <li>AI triage runs only if you turn it on. Data from YouTube is refreshed or deleted within 30 days, with three exceptions today, described in <a href="#thirty-days">30-day refresh or deletion</a>.</li>
           <li>You can export your data, disconnect YouTube, revoke access in your Google account, clear your library, or delete your account.</li>
@@ -170,6 +170,7 @@
               <li><strong>Clear library</strong> (Settings → Data and privacy) deletes your imported videos, notes, decisions, watch plans, saved exports, import history and the AI results for your videos. It keeps:
                 <ul>
                   <li>your account, YouTube connection, sync history, YouTube quota use and security events;</li>
+                  <li>if you agreed to the AI notice of 13 October 2026, the profiles of the goals you used in the last 14 days (see <a href="#ai-more">Embeddings, video summaries and goal ranking</a>);</li>
                   <li>usage information about past AI requests, such as token counts and cost, which is needed to enforce usage limits.</li>
                 </ul>
                 It also deletes the rest of those AI request records and the counts of failed AI attempts within 7 calendar days.</li>
@@ -207,7 +208,7 @@
             </ul>
 
             <h3 id="yt-sharing">Sharing, device storage and contact</h3>
-            <p><strong>Who receives your data.</strong> Sifteriq shares information with the service providers that run it: Google and YouTube (the video IDs it looks up and, if you connect, your Google authorization and the playlist and videos each request involves); YouTube's image servers, which your browser contacts to load thumbnails; Supabase, which stores Sifteriq's data and runs sign-in; and OpenRouter and the AI model providers it routes to, which receive video details and your goal for AI triage, if you turn it on (named in <a href="#ai-who">Who processes it</a>). Otherwise, Sifteriq discloses information only when the law requires it, to protect the rights, safety or security of its users or others, or if Sifteriq changes hands. Today the app and its background worker run on the developer's own computer in Egypt, not at a hosting provider. We do not sell your data or share it for advertising. See <a href="#sharing">Who we share information with</a>.</p>
+            <p><strong>Who receives your data.</strong> Sifteriq shares information with the service providers that run it: Google and YouTube (the video IDs it looks up and, if you connect, your Google authorization and the playlist and videos each request involves); YouTube's image servers, which your browser contacts to load thumbnails; Supabase, which stores Sifteriq's data and runs sign-in; and OpenRouter and the AI model providers it routes to, including DeepInfra and Nebius for embeddings, which receive video details and your goal for AI triage, if you turn it on, and for the uses you agree to in the AI notice of 13 October 2026 (named in <a href="#ai-who">Who processes it</a>). Otherwise, Sifteriq discloses information only when the law requires it, to protect the rights, safety or security of its users or others, or if Sifteriq changes hands. Today the app and its background worker run on the developer's own computer in Egypt, not at a hosting provider. We do not sell your data or share it for advertising. See <a href="#sharing">Who we share information with</a>.</p>
             <p><strong>Cookies and storage on your device.</strong> The Sifteriq app uses cookies to keep you signed in and to secure email-confirmation and password-reset links, short-lived cookies that protect the YouTube connection flow, a cookie that remembers whether the sidebar is collapsed, and local storage that remembers your library view and other preferences. There are no advertising or analytics cookies and no third-party tracking. See <a href="#cookies">Cookies and browser storage</a>.</p>
             <p><strong>Contact.</strong> Questions or complaints about Sifteriq's privacy practices: <a href="mailto:abdoelsmany66@gmail.com">abdoelsmany66@gmail.com</a>. See also <a href="#contact">Contact</a>.</p>
           </section>
@@ -247,7 +248,7 @@
                   </tr>
                   <tr>
                     <th scope="row">AI results</th>
-                    <td data-label="What it includes">For each video: topic, content type, difficulty, priority score, suggested decision, freshness risk, a possible-duplicate key, a short reason and the model used. For each AI request: which videos it covered, token counts, cost and the provider's raw response. For each video, a count of failed AI attempts. Results imported from a decisions file you upload are stored the same way, marked as imported.</td>
+                    <td data-label="What it includes">For each video: topic, content type, difficulty, priority score, suggested decision, freshness risk, a possible-duplicate key, a short reason and the model used. For each AI request: which videos it covered, token counts, cost and the provider's raw response. For each video, a count of failed AI attempts. Results imported from a decisions file you upload are stored the same way, marked as imported. If you agreed to the AI notice of 13 October 2026, also: for each video, an embedding and a summary (its topic, names it mentions, what it covers, its type, level and how time-sensitive it is) with the AI's answer as returned; for each goal you use, its profile and an embedding of it; for each video and goal, a ranking (a score, a suggested decision and, for the top videos, a short reason); and for two videos that may be copies, how alike their embeddings are and the AI's duplicate check.</td>
                   </tr>
                   <tr>
                     <th scope="row">YouTube actions</th>
@@ -292,6 +293,11 @@
                     <td data-label="Legal basis (EEA and UK)">Your consent, which you can withdraw by turning AI triage off</td>
                   </tr>
                   <tr>
+                    <th scope="row">Embeddings, video summaries, goal ranking and duplicate checks</th>
+                    <td data-label="Information used">Video details and your goal (see <a href="#ai-more">Embeddings, video summaries and goal ranking</a>)</td>
+                    <td data-label="Legal basis (EEA and UK)">Your consent to the AI notice of 13 October 2026, which you can withdraw by turning AI triage off</td>
+                  </tr>
+                  <tr>
                     <th scope="row">Keep Sifteriq secure, prevent abuse, fix problems and control costs</th>
                     <td data-label="Information used">Service and security records; the session details and log of account events in Account</td>
                     <td data-label="Legal basis (EEA and UK)">Our legitimate interests in keeping the service and its users' data safe and running within budget</td>
@@ -321,16 +327,27 @@
               <li><strong>For each batch:</strong> the goal you wrote.</li>
               <li><strong>Never sent:</strong> your name, email address, user ID, YouTube channel, video IDs, playlist names, notes or uploaded files.</li>
             </ul>
+            <p>If you agree to the AI notice of 13 October 2026, Sifteriq also sends what <a href="#ai-more">Embeddings, video summaries and goal ranking</a> describes.</p>
+            <h3 id="ai-more">Embeddings, video summaries and goal ranking</h3>
+            <p>Sifteriq has more AI features that run only if you agreed to its AI notice of 13 October 2026 or a later one, which names each request below and who receives it. Sifteriq shows that notice when you turn on AI triage, or asks you to review it in Settings → Account if you turned AI triage on under an earlier notice; AI triage keeps working either way. Today Sifteriq offers that notice only to its developer's account, and every other account is offered the earlier notice, without these features. With your agreement, Sifteriq also sends:</p>
+            <ul>
+              <li><strong>For embeddings, to DeepInfra or Nebius:</strong> for each video, its title, its chapter titles, the first 500 characters of its description (without links, hashtags or timestamps) and up to 16 of its YouTube tags; and your goal on its own. They turn each text into a list of numbers (an embedding). Sifteriq uses these to compare videos with each other and with your goal, for example to find duplicate saves.</li>
+              <li><strong>For video summaries:</strong> the details listed in <a href="#ai-sent">What is sent</a> for each video, without your goal, so the AI writes a short summary of it: its topic, names it mentions, what it covers, its type, its level and how time-sensitive it is.</li>
+              <li><strong>For your goal:</strong> your goal on its own, so the AI turns it into a short profile of what the goal asks for, such as its topics, level and preferred length.</li>
+              <li><strong>For ranking:</strong> your goal with Sifteriq's summaries of your videos and each video's length and age, so the AI ranks your videos for the goal. Titles and descriptions are not sent with these requests.</li>
+              <li><strong>For duplicate checks:</strong> for two videos that may be the same, each one's title, length, publish year and up to 500 characters of its description, with whether they share a channel and a length, so the AI judges whether they are copies.</li>
+            </ul>
+            <p>The requests for summaries, goal profiles, rankings and duplicate checks go through OpenRouter to the same AI model providers as AI triage; the embedding requests go through OpenRouter only to DeepInfra or Nebius (see <a href="#ai-who">Who processes it</a>). None of these requests includes anything listed under "Never sent" above. Sifteriq stores the results with your library and deletes them as described in <a href="#retention">How long we keep information</a>. It never shows or exports the embeddings. Where it shows the summaries, rankings or duplicate checks, they are its own estimates (see <a href="#ai-labels">AI labels</a>). Turning AI triage off stops all of these requests.</p>
             <h3 id="ai-who">Who processes it</h3>
             <p>OpenRouter, Inc. (United States), an AI gateway, forwards each request to a model provider that runs the model and returns the result. OpenRouter also sorts a small sample of requests into anonymous categories, using a model that keeps no data, for its public usage rankings. Sifteriq does not train any AI model on your data.</p>
-            <p>OpenRouter sends each request to one of four model providers: Together AI, Makora, Ionstream and Parasail. Together AI, Ionstream and Parasail are based in the United States; Makora is run by A2 Labs Inc., whose privacy policy names service providers in the United States. Sifteriq asks for zero data retention on every request, so OpenRouter sends it only to endpoints that OpenRouter lists as keeping no prompts or outputs after responding. Your data is therefore not stored by these model providers or used by them to train AI models.</p>
+            <p>OpenRouter sends each request for AI triage, video summaries, goal profiles, rankings and duplicate checks to one of four model providers: Together AI, Makora, Ionstream and Parasail. Together AI, Ionstream and Parasail are based in the United States; Makora is run by A2 Labs Inc., whose privacy policy names service providers in the United States. It sends each embedding request to one of two model providers: DeepInfra, run by DeepInfra, Inc., based in the United States; or Nebius, run by Nebius Group N.V., based in the Netherlands, whose privacy policy names group companies in the Netherlands, Israel and the United States. Sifteriq asks for zero data retention on every request, so OpenRouter sends it only to endpoints that OpenRouter lists as keeping no prompts or outputs after responding. Your data is therefore not stored by these model providers or used by them to train AI models.</p>
             <p>You can also upload a decisions file produced by your own AI tool (Settings → Advanced). Sifteriq stores the suggestions in it as described in <a href="#collect">Information we collect</a>. That file is not sent to OpenRouter or any model provider.</p>
             <h3 id="ai-choice">Your choice</h3>
             <p>AI triage is off until you turn it on. Sifteriq asks before it first sends your videos to an AI provider, and you can turn it off at any time with the <strong>AI recommendations</strong> switch in Settings → Account. Sifteriq then sends no new requests. Recommendations it already made stay in your library and are kept as described in <a href="#retention">How long we keep information</a>. Without AI triage you can still import, organize and review your videos yourself.</p>
-            <p>When AI triage is on, your goal goes to the AI provider with each batch. Please do not put sensitive personal information in it, such as health details, religious or political views, or anything that identifies you.</p>
+            <p>When AI triage is on, your goal goes to the AI provider with each batch, and to the AI providers described in <a href="#ai-more">Embeddings, video summaries and goal ranking</a> if you agreed to that notice. Please do not put sensitive personal information in it, such as health details, religious or political views, or anything that identifies you.</p>
             <h3 id="ai-labels">AI labels are Sifteriq's own estimates</h3>
-            <p><strong>Sifteriq's recommendations, priority scores, topics and reasons are generated independently by Sifteriq and are not sourced directly from YouTube's API.</strong> YouTube does not provide or endorse them. They can be wrong, so check them before you act on them, especially before removing videos from YouTube. Sifteriq labels these fields in the app and in exports as its own estimates, not data from YouTube; results from a decisions file you upload are labeled as imported from that file.</p>
-            <p>AI triage classifies videos, not people. Sifteriq does not use AI to profile you or to infer sensitive characteristics about you. Watch plans are built by fixed rules, without AI.</p>
+            <p><strong>Sifteriq's recommendations, priority scores, topics, reasons, video summaries, rankings and duplicate checks are generated independently by Sifteriq and are not sourced directly from YouTube's API.</strong> YouTube does not provide or endorse them. They can be wrong, so check them before you act on them, especially before removing videos from YouTube. Sifteriq labels these fields in the app and in exports as its own estimates, not data from YouTube; results from a decisions file you upload are labeled as imported from that file.</p>
+            <p>AI triage classifies videos, not people. The profile of a goal describes what the goal asks for, not you. Sifteriq does not use AI to profile you or to infer sensitive characteristics about you. Watch plans are built by fixed rules, without AI.</p>
           </section>
 
           <section aria-labelledby="sharing">
@@ -369,8 +386,14 @@
                   <tr>
                     <th scope="row">AI model providers, reached through OpenRouter</th>
                     <td data-label="What it does for Sifteriq">Run the AI model</td>
-                    <td data-label="Information it receives">The same as OpenRouter. These providers are Together AI, Makora, Ionstream and Parasail, and each request goes only to an endpoint that keeps no prompts or outputs after responding (zero data retention; see <a href="#ai-who">Who processes it</a>).</td>
+                    <td data-label="Information it receives">The same as OpenRouter, except the embedding requests. These providers are Together AI, Makora, Ionstream and Parasail, and each request goes only to an endpoint that keeps no prompts or outputs after responding (zero data retention; see <a href="#ai-who">Who processes it</a>).</td>
                     <td data-label="Location">United States for Together AI, Ionstream and Parasail; Makora's privacy policy names service providers in the United States</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Embedding providers, reached through OpenRouter</th>
+                    <td data-label="What it does for Sifteriq">Turn video details and your goal into embeddings</td>
+                    <td data-label="Information it receives">Only if you agreed to the AI notice of 13 October 2026: each video's title, chapter titles, the start of its description and up to 16 of its tags, and your goal on its own (see <a href="#ai-more">Embeddings, video summaries and goal ranking</a>). These providers are DeepInfra, Inc. and Nebius (Nebius Group N.V.), and each request goes only to an endpoint that keeps no prompts or outputs after responding (zero data retention; see <a href="#ai-who">Who processes it</a>).</td>
+                    <td data-label="Location">United States for DeepInfra; the Netherlands for Nebius, whose privacy policy also names group companies in Israel and the United States</td>
                   </tr>
                   <tr>
                     <th scope="row"><span class="launch">At launch</span> Our hosting provider</th>
@@ -456,13 +479,17 @@
                   <tr><th scope="row">AI results</th><td data-label="How long">The current result is kept while the video is in your library. A replaced result is deleted within 30 days after the cached copy of your library is rebuilt with its replacement (see <a href="#thirty-days">30-day refresh or deletion</a>).</td></tr>
                   <tr><th scope="row">Technical records of AI requests, including the provider's raw responses</th><td data-label="How long">30 days, or until you delete your account, whichever comes first. Clearing your library deletes the videos they covered and the provider's responses within 7 days; the usage information, such as token counts and cost, stays until the 30 days pass, because it is needed to enforce usage limits.</td></tr>
                   <tr><th scope="row">Counts of failed AI attempts for each video</th><td data-label="How long">Until you clear your library or delete your account.</td></tr>
+                  <tr><th scope="row">Embeddings of your videos</th><td data-label="How long">Kept while the video is in your library and its details stay the same. Deleted when its title, description, length or tags change, when its details are not refreshed from YouTube within 30 days, and when the video leaves your library, for example when you clear your library or delete your account. Sifteriq never shows or exports them.</td></tr>
+                  <tr><th scope="row">Video summaries, and the rankings made from them</th><td data-label="How long">The current summary is kept while the video is in your library and its details are refreshed. A summary is deleted 14 days after the details it was made from change, when they are not refreshed from YouTube within 30 days, and when the video leaves your library. A ranking is deleted with its summary or with the profile of its goal.</td></tr>
+                  <tr><th scope="row">Profiles of your goals, with their embeddings</th><td data-label="How long">Deleted 14 days after you last use that goal, and when you delete your account. Clearing your library does not delete them.</td></tr>
+                  <tr><th scope="row">Duplicate checks</th><td data-label="How long">How alike two videos' embeddings are, and the AI's check of the pair, are deleted when the embedding of either video is deleted or replaced, when either video's details are not refreshed from YouTube within 30 days, and when either video leaves your library.</td></tr>
                   <tr><th scope="row">Saved export files</th><td data-label="How long">Download links expire after 15 minutes, and a file can no longer be downloaded 23 hours after it is made. Today the file itself is deleted at the next cleanup after that, which runs in Sifteriq's background worker and whenever you make another export. Clearing your library, disconnecting YouTube or deleting your account also deletes your saved files. <span class="launch">At launch</span> Each file is deleted within 24 hours after it is made.</td></tr>
                   <tr><th scope="row">Service records in our database (routine activity and sync history)</th><td data-label="How long">90 days; your 20 most recent sync runs are kept while your account exists.</td></tr>
                   <tr><th scope="row">Request logs at our hosting provider</th><td data-label="How long"><span class="launch">At launch</span> We will state the period here when we name the provider.</td></tr>
                   <tr><th scope="row">YouTube quota use</th><td data-label="How long">Until you delete your account.</td></tr>
                   <tr><th scope="row">Security events</th><td data-label="How long">While your account exists. The YouTube channel, playlist and video IDs in them are removed within 30 days of the event, and sooner when the data of the connection they belong to is deleted. The deletion records in the next row are kept afterwards.</td></tr>
                   <tr><th scope="row">Records that a library was cleared and that an account was deleted</th><td data-label="How long">Kept with no time limit after account deletion, to show the deletion happened (see <a href="#delete">Deleting your data</a>). Neither holds any identifier.</td></tr>
-                  <tr><th scope="row">Copies at AI providers</th><td data-label="How long">None kept by the model providers after the response (zero data retention). For OpenRouter's anonymous categorization sample, see <a href="#ai-who">Who processes it</a>.</td></tr>
+                  <tr><th scope="row">Copies at AI providers</th><td data-label="How long">None kept by the model providers, including DeepInfra and Nebius, after the response (zero data retention). For OpenRouter's anonymous categorization sample, see <a href="#ai-who">Who processes it</a>.</td></tr>
                   <tr><th scope="row">Browser storage</th><td data-label="How long">See <a href="#cookies">Cookies and browser storage</a>.</td></tr>
                 </tbody>
               </table>
@@ -487,7 +514,7 @@
 
           <section aria-labelledby="transfers">
             <h2 id="transfers">International transfers</h2>
-            <p>Sifteriq is run from Egypt, and its service providers process information in other countries, including the United States. Your information may therefore be processed outside the country where you live, in places whose data protection laws differ from yours. Where each provider processes data is listed in <a href="#sharing">Who we share information with</a>.</p>
+            <p>Sifteriq is run from Egypt, and its service providers process information in other countries, including the United States and the Netherlands. Your information may therefore be processed outside the country where you live, in places whose data protection laws differ from yours. Where each provider processes data is listed in <a href="#sharing">Who we share information with</a>.</p>
             <p><span class="launch">At launch</span> Before Sifteriq opens to the public, we will put in place the data protection terms these providers offer for international transfers, such as the EU Standard Contractual Clauses, and list them here.</p>
           </section>
 
