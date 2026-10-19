@@ -1,8 +1,8 @@
 # Changes to the Privacy Policy and Terms
 
-## [PUBLICATION DATE]: rewrite for Sifteriq as it works now (material change)
+## 19 October 2026: rewrite for Sifteriq as it works now (material change)
 
-Effective [EFFECTIVE DATE: publication date + 14 days]. Until then the versions effective 8 October 2026 apply. Every account, the developer's included, is asked to accept the new pages, and to agree to the updated AI notice in the app before Sifteriq sends anything to an AI provider again.
+Effective 2 November 2026. Until then the versions effective 8 October 2026 apply. Every account, the developer's included, is asked to accept the new pages, and to agree to the updated AI notice in the app before Sifteriq sends anything to an AI provider again.
 
 ### Why
 
