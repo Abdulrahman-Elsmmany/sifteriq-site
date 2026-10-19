@@ -1,5 +1,6 @@
 <!doctype html>
-<!-- Not legal advice; reviewed against YouTube API Services Developer Policies on 2026-10-08 -->
+<!-- Not legal advice; reviewed against YouTube API Services Developer Policies on 2026-10-08, rewritten for the current system on 2026-10-19 -->
+<!-- OWNER, AT PUBLICATION: replace both bracketed dates below (and the one in the callout and in #changes) with real <time datetime="YYYY-MM-DD">D Month YYYY</time> elements. Last updated = the publication date; Effective date = publication date + 14 days (a material change). Then set currentLegalVersions in the app (lib/sifteriq-legal.ts) to the Effective date. -->
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -42,8 +43,8 @@
         <span class="eyebrow">Legal</span>
         <h1 class="text-fade">Privacy Policy</h1>
         <p class="doc-meta">
-          <span>Effective date: <strong><time datetime="2026-10-08">8 October 2026</time></strong></span>
-          <span>Last updated: <strong><time datetime="2026-10-13">13 October 2026</time></strong></span>
+          <span>Effective date: <strong>[EFFECTIVE DATE: publication date + 14 days, set at publication]</strong></span>
+          <span>Last updated: <strong>[PUBLICATION DATE, set at publication]</strong></span>
         </p>
       </header>
 
@@ -52,6 +53,7 @@
         <div>
           <p class="callout-title">Sifteriq is in private development and is not yet available to the public.</p>
           <p>No one other than its developer uses Sifteriq today. This policy describes how Sifteriq handles personal data, including how it will handle your data when it opens to users. Commitments marked "At launch" describe practices that are not yet in place. Sifteriq will not open to anyone other than its developer until they are in place, and we will remove each label as the practice it marks goes live. A label applies to everything after it, up to the end of its paragraph, list item or table cell, and to any list that the labeled sentence introduces. A label on a table row's heading applies to the whole row.</p>
+          <p>This version is a material change. It takes effect on [EFFECTIVE DATE], 14 days after it was published; until then the version effective 8 October 2026 applies. Sifteriq asks every account to accept this version before it continues, and to agree to its updated AI notice before it sends anything new to an AI provider (see <a href="#changes">Changes to this policy</a>).</p>
         </div>
       </div>
 
@@ -59,12 +61,12 @@
         <h2 id="summary-title">The short version</h2>
         <ul class="tick-list">
           <li>Sifteriq helps you organize your own YouTube Watch Later list. It uses YouTube API Services, and Google's Privacy Policy applies to data that YouTube processes.</li>
-          <li>We store your email address, the videos you import and their public YouTube details, what you write in Sifteriq, and AI results.</li>
-          <li>If you turn on AI triage, we send video details and your goal to an AI provider to rank your videos. If you agree to our AI notice of 13 October 2026, we also send them to AI providers to summarize and compare your videos, rank them for your goal and check possible duplicates, including to DeepInfra and Nebius, which turn text into embeddings (see <a href="#ai-more">Embeddings, video summaries and goal ranking</a>). We never send your name, email address, notes or account identifiers. The AI model providers keep none of it after responding. OpenRouter, which forwards each request, sorts a small sample of requests into anonymous categories for its public usage rankings (see <a href="#ai-who">Who processes it</a>).</li>
-          <li>We do not sell your data, show ads, or use analytics or tracking cookies.</li>
-          <li>AI triage runs only if you turn it on. Data from YouTube is refreshed or deleted within 30 days, with three exceptions today, described in <a href="#thirty-days">30-day refresh or deletion</a>.</li>
+          <li>We store your email address, the videos you import and their public YouTube details, what you write and choose in Sifteriq (such as notes, decisions, your goal, saved views and snoozes), where you stopped in videos you play in Sifteriq, and AI results.</li>
+          <li>If you turn on AI recommendations and agree to the AI notice Sifteriq shows first, we send video details and your goal through OpenRouter to AI providers that summarize your videos, rank them for your goal, turn text into embeddings and find saved videos that cover the same thing (Groups). Each provider is named in <a href="#ai-who">Who processes it</a>. We never send your name, email address, notes, watch progress or account identifiers. The AI providers keep none of it after responding. OpenRouter, which forwards each request, sorts a small sample of requests into anonymous categories for its public usage rankings.</li>
+          <li>We do not sell your data, show our own ads, or use analytics or tracking cookies. When you play a video in Sifteriq, YouTube's player loads and follows Google's Privacy Policy (see <a href="#yt-player">Playing videos in Sifteriq</a>).</li>
+          <li>AI features run only if you turn them on, within a monthly AI budget for each account. Data from YouTube is refreshed or deleted within 30 days, with three exceptions today, described in <a href="#thirty-days">30-day refresh or deletion</a>.</li>
           <li>You can export your data, disconnect YouTube, revoke access in your Google account, clear your library, or delete your account.</li>
-          <li>Clearing your library deletes your imported videos, notes, decisions, watch plans, saved exports, import history and AI results within 7 days. It keeps your account, your YouTube connection, your service, usage and security records, and, if you agreed to the AI notice of 13 October 2026, your recent goals and their AI profiles. Deleting your account deletes your data within 7 days, except our sign-in provider's own service logs. After that deletion, apart from those logs, the only records that stay longer than 7 days show that a deletion happened, or are public video details that are no longer linked to you and follow the 30-day rule; none of them identifies you (see <a href="#delete">Deleting your data</a>).</li>
+          <li>Clearing your library deletes your imported videos, notes, decisions, watch plans, watch progress, snoozes, saved exports, import history and AI results within 7 days. It keeps your account, your YouTube connection, your saved views (without any channel they filter by), your service, usage and security records, and your recent goals with their AI profiles. Deleting your account deletes your data within 7 days, except our sign-in provider's own service logs. After that deletion, apart from those logs, the only records that stay longer than 7 days show that a deletion happened, or are public video details that are no longer linked to you and follow the 30-day rule; none of them identifies you (see <a href="#delete">Deleting your data</a>).</li>
           <li>Disconnecting YouTube in Sifteriq also deletes the videos imported through that connection, normally at once. Today, revoking access in your Google account, or switching to a different Google account in Sifteriq, ends Sifteriq's access to that account but keeps the videos imported through it (see <a href="#revoke">How to revoke access</a>). <span class="launch">At launch</span> A disconnect's deletion always completes within 7 days, and revoking access in your Google account or switching to a different Google account also deletes the videos imported through that connection.</li>
         </ul>
       </section>
@@ -80,6 +82,7 @@
                 <li><a href="#yt-uses">Sifteriq uses YouTube API Services</a></li>
                 <li><a href="#yt-access">What Sifteriq accesses</a></li>
                 <li><a href="#yt-actions">Actions on your YouTube account</a></li>
+                <li><a href="#yt-player">Playing videos in Sifteriq</a></li>
                 <li><a href="#revoke">How to revoke access</a></li>
                 <li><a href="#delete">Deleting your data</a></li>
                 <li><a href="#thirty-days">30-day refresh or deletion</a></li>
@@ -119,12 +122,12 @@
             <p>This section brings together what YouTube and Google require us to tell you.</p>
 
             <h3 id="yt-uses">Sifteriq uses YouTube API Services</h3>
-            <p><strong>Sifteriq uses YouTube API Services.</strong> YouTube API Services are provided by Google. Google's Privacy Policy is at <a href="http://www.google.com/policies/privacy">http://www.google.com/policies/privacy</a>. It applies to the data that Google and YouTube process when Sifteriq calls YouTube for you.</p>
+            <p><strong>Sifteriq uses YouTube API Services.</strong> YouTube API Services are provided by Google. Google's Privacy Policy is at <a href="http://www.google.com/policies/privacy">http://www.google.com/policies/privacy</a>. It applies to the data that Google and YouTube process when Sifteriq calls YouTube for you, and when you play a video in Sifteriq with YouTube's embedded player.</p>
             <p>By using Sifteriq, you agree to be bound by the YouTube Terms of Service at <a href="https://www.youtube.com/t/terms">https://www.youtube.com/t/terms</a>. See also our <a href="terms.html">Terms of Service</a>.</p>
 
             <h3 id="yt-access">What Sifteriq accesses from YouTube and Google</h3>
             <p>Sifteriq does not use Google sign-in. You sign in with an email address and password. Connecting a Google account is optional and is used only to connect a YouTube playlist.</p>
-            <p><strong>Video details, for every video you import.</strong> However you import a video, Sifteriq asks the YouTube Data API for its public details using Sifteriq's own API key: title, description, tags, channel name and ID, category, language, duration, publish date, privacy and availability status, and thumbnail links. These requests tell Google which videos were looked up, not which Sifteriq user asked.</p>
+            <p><strong>Video details, for every video you import.</strong> However you import a video, Sifteriq asks the YouTube Data API for its public details using Sifteriq's own API key: title, description, tags, channel name and ID, category, language, duration, publish date, privacy and availability status, whether it may be embedded, whether YouTube designates it as made for kids, and thumbnail links. Sifteriq asks again before the details are 30 days old, so they stay current, and deletes them if it cannot. These requests tell Google which videos were looked up, not which Sifteriq user asked.</p>
             <p><strong>If you connect a YouTube account.</strong> Sifteriq asks Google for one of two permissions:</p>
             <div class="table-wrap">
               <table class="stack">
@@ -144,7 +147,7 @@
               </table>
             </div>
             <p>When you connect, Google gives Sifteriq a refresh token so it can keep your playlist in sync. We store it encrypted (AES-256-GCM) in our database at Supabase, and the Sifteriq web page can never read it. Short-lived access tokens are never saved: the Sifteriq app keeps them only in memory while it runs (today, on the developer's computer).</p>
-            <p>Sifteriq does not read your watch history, subscriptions, comments, likes or YouTube Analytics through the API, and it never downloads videos. YouTube does not let apps read the Watch Later list through the API, so you bring it in yourself: upload a Google Takeout export, paste links, or copy the videos to a normal playlist and connect that playlist. A Google Takeout file you upload is handled differently from the API: see <a href="#takeout">Google Takeout files</a> in Information we collect.</p>
+            <p>Sifteriq does not read your watch history, subscriptions, comments, likes or YouTube Analytics through the API, and it never downloads videos, captions or transcripts. YouTube does not let apps read the Watch Later list through the API, so you bring it in yourself: upload a Google Takeout export, paste links, or copy the videos to a normal playlist and connect that playlist. A Google Takeout file you upload is handled differently from the API: see <a href="#takeout">Google Takeout files</a> in Information we collect.</p>
 
             <h3 id="yt-actions">Actions Sifteriq takes on your YouTube account</h3>
             <p>Only with the Manage permission, and only after you start an action in Sifteriq:</p>
@@ -153,7 +156,12 @@
               <li><strong>Remove videos from the playlist you connected</strong>: only the videos you select, and only after you confirm the removal. Removal changes the playlist on YouTube.</li>
               <li><strong>Undo a removal</strong>: put a video you removed back at the end of the playlist, when you choose Undo.</li>
             </ul>
-            <p>Switching to a different Google account creates no playlist by itself; you pick one from the new account. If you choose <strong>Create a private Sifteriq Inbox</strong> and then pick a different account at Google, Sifteriq creates or reuses that playlist in the account you picked. Sifteriq never uploads, rates or comments on videos, and never changes any other playlist or setting. AI suggestions never remove anything on their own.</p>
+            <p>Switching to a different Google account creates no playlist by itself; you pick one from the new account. If you choose <strong>Create a private Sifteriq Inbox</strong> and then pick a different account at Google, Sifteriq creates or reuses that playlist in the account you picked. Sifteriq never uploads, rates or comments on videos, and never changes any other playlist or setting. Sifteriq may suggest removing a video and show why, but nothing is ever removed on its own: only a Remove button you press, and confirm, removes a video.</p>
+
+            <h3 id="yt-player">Playing videos in Sifteriq</h3>
+            <p>Sifteriq can play videos from your library inside Sifteriq with YouTube's embedded player in privacy-enhanced mode (<code>youtube-nocookie.com</code>) and YouTube's IFrame Player API. YouTube provides the player, and Sifteriq shows it unchanged, with YouTube's own controls and any ads YouTube shows. When it loads and while you watch, YouTube may collect information about your device and your viewing, and may place, read or recognize cookies or similar technologies on your device, as described in the Google Privacy Policy (<a href="http://www.google.com/policies/privacy">http://www.google.com/policies/privacy</a>). The player loads only when you choose to watch a video, and a video starts only when you choose to play it, for example with the play button or by choosing one of its chapters.</p>
+            <p>For videos that YouTube has not designated as made for kids, Sifteriq saves where you stopped and how long you played (about every 30 seconds while a video plays, and when you pause, close the player or leave the page), and marks a video watched when you reach its end after playing most of it; you can undo that. Only you can see this record. Sifteriq uses it to resume a video where you stopped, to show what you started on Today, and to choose which video of a group in Groups to start with. It is Sifteriq's own record, not data from YouTube, and it is never sent to AI providers. Sifteriq deletes it 28 days after it was last saved, when the video leaves your library (for example when you clear your library or disconnect YouTube), when you undo a watched mark, and when you delete your account, and within 7 days of a deletion request.</p>
+            <p>Sifteriq does not play videos designated as made for kids, or videos YouTube does not allow to be embedded, inside Sifteriq. They open on YouTube instead, and Sifteriq records nothing about them while they play. When Sifteriq does not yet know whether a video is made for kids, it first asks the YouTube Data API for that video's details (one request), and if it still cannot tell, opens the video on YouTube.</p>
 
             <h3 id="revoke">How to revoke access</h3>
             <p>You can withdraw Sifteriq's access to your Google account at any time, in either of two ways:</p>
@@ -162,18 +170,19 @@
               <li><strong>In your Google account:</strong> in addition to deleting your data in Sifteriq, you can revoke Sifteriq's access to your Google account data at any time on the Google security settings page.</li>
             </ul>
             <p class="key-link"><span class="eyebrow">Google security settings</span><a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a></p>
-            <p>When you disconnect YouTube in Sifteriq, it also deletes the YouTube data obtained through that connection, normally at once: your channel and playlist details and the videos imported from your connected playlists, together with anything attached to those videos in Sifteriq, such as notes, decisions, AI results and saved watch plans that include them, and your saved export files. Videos you also imported another way, for example from a Takeout file, stay in your library. Today, if Sifteriq's access ends at Google instead, for example because you revoked it on Google's security settings page, or if you switch to a different Google account in Sifteriq, the videos imported through that connection stay until you clear your library, disconnect YouTube in Sifteriq or delete your account, and the IDs of its channel and playlists stay until you disconnect YouTube in Sifteriq or delete your account. Today the same applies to a playlist you replace by choosing a different one for Sifteriq to sync, for example with <strong>Change playlist</strong> in Settings → Connections: the videos imported from it, and its ID, stay in the same way. <span class="launch">At launch</span> If a disconnect's deletion cannot finish at once, for example while a sync is running, it completes within 7 calendar days. If you revoke access on Google's security settings page instead, Sifteriq detects it and deletes that data within 30 calendar days; reconnecting the same account before then keeps it. Switching to a different Google account in Sifteriq ends the previous account's connection in the same way: unless you switch back to that account within 3 days, its data is deleted within 7 calendar days of the switch.</p>
+            <p>When you disconnect YouTube in Sifteriq, it also deletes the YouTube data obtained through that connection, normally at once: your channel and playlist details and the videos imported from your connected playlists, together with anything attached to those videos in Sifteriq, such as notes, decisions, watch progress, snoozes, AI results and saved watch plans that include them, and your saved export files. Videos you also imported another way, for example from a Takeout file, stay in your library. Today, if Sifteriq's access ends at Google instead, for example because you revoked it on Google's security settings page, or if you switch to a different Google account in Sifteriq, the videos imported through that connection stay until you clear your library, disconnect YouTube in Sifteriq or delete your account, and the IDs of its channel and playlists stay until you disconnect YouTube in Sifteriq or delete your account. Today the same applies to a playlist you replace by choosing a different one for Sifteriq to sync, for example with <strong>Change playlist</strong> in Settings → Connections: the videos imported from it, and its ID, stay in the same way. <span class="launch">At launch</span> If a disconnect's deletion cannot finish at once, for example while a sync is running, it completes within 7 calendar days. If you revoke access on Google's security settings page instead, Sifteriq detects it and deletes that data within 30 calendar days; reconnecting the same account before then keeps it. Switching to a different Google account in Sifteriq ends the previous account's connection in the same way: unless you switch back to that account within 3 days, its data is deleted within 7 calendar days of the switch.</p>
 
             <h3 id="delete">Deleting your data</h3>
             <p>You can delete the data Sifteriq stores at any time:</p>
             <ul>
-              <li><strong>Clear library</strong> (Settings → Data and privacy) deletes your imported videos, notes, decisions, watch plans, saved exports, import history and the AI results for your videos. It keeps:
+              <li><strong>Clear library</strong> (Settings → Data and privacy) deletes your imported videos, notes, decisions, watch plans, watch progress, snoozes, saved exports, import history, your choices in Groups and the AI results for your videos (summaries, rankings, embeddings and Groups answers). It keeps:
                 <ul>
                   <li>your account, YouTube connection, sync history, YouTube quota use and security events;</li>
-                  <li>if you agreed to the AI notice of 13 October 2026, the goals you used recently, with their AI profiles, until they are deleted as described in <a href="#retention">How long we keep information</a>;</li>
-                  <li>usage information about past AI requests, such as token counts and cost, which is needed to enforce usage limits.</li>
+                  <li>your saved views, without any channel they filter by;</li>
+                  <li>the goals you used recently, with their AI profiles, until they are deleted as described in <a href="#retention">How long we keep information</a>;</li>
+                  <li>usage information about past AI requests, such as token counts and cost, and your monthly AI budgets, which are needed to enforce budgets and usage limits. These records hold no video details and no AI text.</li>
                 </ul>
-                It also deletes the rest of those AI request records and the counts of failed AI attempts within 7 calendar days.</li>
+              </li>
               <li><strong>Delete account data</strong> (Settings → Data and privacy) asks Google to revoke Sifteriq's access, deletes your library, exports, YouTube credentials and account, and signs you out on every device.</li>
               <li><strong>By email:</strong> write to <a href="mailto:abdoelsmany66@gmail.com">abdoelsmany66@gmail.com</a> from the address on your account.</li>
             </ul>
@@ -181,13 +190,13 @@
             <p><strong>When you ask us to delete your data, or you delete your account, we delete the related data we store as soon as possible and within 7 calendar days.</strong> Two kinds of record are exceptions: the public video details that your imports stored, which are stored once for every user who saved the same video and follow the 30-day rule (see below); and our sign-in provider's own service logs, which keep entries for a short period set by our Supabase plan (see <a href="#sign-in-records">Sign-in records</a> below). Records that show a deletion happened are also kept; they identify no one (see below).</p>
             <p>Backups made by our database provider are kept for no more than 7 days, so deleted data also leaves them within that time.</p>
             <p>Deleting the data Sifteriq stores does not affect any data stored by YouTube. To delete data on YouTube, use YouTube or another authorized app that can delete it.</p>
-            <p>Public video details, such as titles, descriptions, tags and channel names, are stored once and reused for every user who saved the same video; other users cannot see that you saved it. After you delete your account they are no longer linked to you. They follow the 30-day rule below.</p>
+            <p>Public video details, such as titles, descriptions, tags and channel names, are stored once and reused for every user who saved the same video; other users cannot see that you saved it. After you delete your account they are no longer linked to you. They follow the 30-day rule below, and are deleted once no one's library holds the video.</p>
             <p>Sifteriq keeps two of its own records after account deletion: a record that your library was cleared, which holds counts of what was deleted; and a record that the account was deleted, which holds the date, counts of what was deleted and whether Google confirmed the revocation. Neither holds your email address or any other identifier, any content, or any data from YouTube. They are kept with no time limit, to show the deletion happened.</p>
             <p>If Google does not confirm the revocation, Sifteriq tells you and links to the Google security settings page so you can remove its access yourself.</p>
             <p id="sign-in-records"><strong>Sign-in records.</strong> Our sign-in provider, Supabase, keeps a log of account events: sign-ups, sign-ins, session refreshes, sign-outs, password resets and changes, and the deletion of your account. Each entry holds your email address. Supabase keeps this log only in its own service logs, not in our database. Those logs also record IP addresses and browser types, and keep entries for a short period set by our Supabase plan, including the entry for the deletion of your account.</p>
 
             <h3 id="thirty-days">30-day refresh or deletion of data from YouTube</h3>
-            <p>Sifteriq keeps data it obtains from YouTube API Services for no more than 30 calendar days before it refreshes that data from YouTube or deletes it. This covers video details, channel and playlist details, and copies of that data inside Sifteriq, such as watch-plan snapshots. Details of videos that become private, are deleted from YouTube, or are no longer in anyone's library are deleted from Sifteriq.</p>
+            <p>Sifteriq keeps data it obtains from YouTube API Services for no more than 30 calendar days before it refreshes that data from YouTube or deletes it. This covers video details, channel and playlist details, copies of that data inside Sifteriq, such as watch-plan snapshots, and what Sifteriq derives from it, such as AI summaries, embeddings, Groups answers and groups of duplicate copies: these are deleted when the details they were made from are not refreshed in time. Details of videos that become private, are deleted from YouTube, or are no longer in anyone's library are deleted from Sifteriq.</p>
             <p>Today there are three exceptions:</p>
             <ul>
               <li><strong>Ended connections and replaced playlists.</strong> When you choose a different playlist for Sifteriq to sync, for example with <strong>Change playlist</strong> in Settings → Connections, or a YouTube connection ends other than through <strong>Disconnect YouTube</strong>, because Sifteriq's access ended at Google or you switched to a different Google account in Sifteriq, Sifteriq keeps the IDs of the playlists it no longer syncs and of an ended connection's channel, and the list of videos imported from those playlists, as described in <a href="#revoke">How to revoke access</a>. Their names and other details from YouTube still follow the rule above.</li>
@@ -195,27 +204,27 @@
               <li><strong>The cached copy of your library.</strong> Sifteriq's pages read your library from a cached copy, which is rebuilt from the refreshed or deleted details when the background worker runs or you open Sifteriq. While neither happens, it can keep video details, such as titles and descriptions, for longer than 30 days.</li>
             </ul>
             <p><span class="launch">At launch</span> The data of an ended connection is deleted as described in <a href="#revoke">How to revoke access</a>, each saved export file is deleted within 24 hours after it is made, and the data of a playlist you replaced and the cached copy of your library follow the rule above.</p>
-            <p>The list of videos you imported from a file or pasted links is your own data, as are your notes, decisions and goal. The videos, notes and decisions stay until you clear your library or delete your account, and your goal until you delete your account. You can edit or clear a note, and edit your goal, at any time. When the details they are based on change, AI results are rebuilt if AI triage is on. A replaced result is deleted within 30 days after the cached copy of your library is rebuilt with its replacement.</p>
+            <p>The list of videos you imported from a file or pasted links is your own data, as are your notes, decisions, goal, saved views and snoozes. The videos, notes and decisions stay until you clear your library or delete your account, and your goal until you delete your account. You can edit or clear a note, and edit your goal, at any time. Watch progress is your own record too, but Sifteriq deletes it 28 days after it was last saved (see <a href="#yt-player">Playing videos in Sifteriq</a>). When a video's details change, Sifteriq summarizes it again if AI recommendations are on; the replaced summary, and the rankings made from it, are deleted within 2 days.</p>
 
             <h3 id="limited-use">Google API Services User Data Policy and Limited Use</h3>
             <p><span class="launch">At launch</span> Sifteriq's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes">Limited Use requirements</a>. In practice:</p>
             <ul>
               <li>We use Google user data only to provide and improve the Sifteriq features you use.</li>
-              <li>We transfer it to others only to provide user-facing features you can see in Sifteriq, and only with your consent (for example, sending video details to an AI provider for triage after you turn AI triage on); for security purposes, such as investigating abuse; to comply with the law; or, with your explicit prior consent, as part of a merger, acquisition or sale of Sifteriq's assets.</li>
+              <li>We transfer it to others only to provide user-facing features you can see in Sifteriq, and only with your consent (for example, sending video details to the AI providers named in <a href="#ai-who">Who processes it</a> after you turn on AI recommendations and agree to the AI notice); for security purposes, such as investigating abuse; to comply with the law; or, with your explicit prior consent, as part of a merger, acquisition or sale of Sifteriq's assets.</li>
               <li>We never use it for advertising, never sell it, and never use it to determine creditworthiness or for lending.</li>
-              <li>We never use it to develop, improve or train general-purpose AI or machine-learning models, and we do not allow our AI providers to do so.</li>
+              <li>We never use it to develop, improve or train general-purpose AI or machine-learning models, and we do not allow our AI providers to do so. The small model Groups uses to pick likely pairs of videos (see <a href="#ai-groups">Groups</a>) was fitted once, before release, on labeled pairs of videos from the developer's own library; it is used only for Groups, holds no titles, descriptions or IDs, and is never fitted again on your data.</li>
               <li>People do not read it except as described in <a href="#people">When people can see your data</a>.</li>
             </ul>
 
             <h3 id="yt-sharing">Sharing, device storage and contact</h3>
-            <p><strong>Who receives your data.</strong> Sifteriq shares information with the service providers that run it: Google and YouTube (the video IDs it looks up and, if you connect, your Google authorization and the playlist and videos each request involves); YouTube's image servers, which your browser contacts to load thumbnails; Supabase, which stores Sifteriq's data and runs sign-in; and OpenRouter and the AI model providers it routes to, which receive video details and your goal for AI triage, if you turn it on, and, if you agree to the AI notice of 13 October 2026, for the uses it describes, including embeddings made by DeepInfra and Nebius (named in <a href="#ai-who">Who processes it</a>). Otherwise, Sifteriq discloses information only when the law requires it, to protect the rights, safety or security of its users or others, or if Sifteriq changes hands. Today the app and its background worker run on the developer's own computer in Egypt, not at a hosting provider. We do not sell your data or share it for advertising. See <a href="#sharing">Who we share information with</a>.</p>
-            <p><strong>Cookies and storage on your device.</strong> The Sifteriq app uses cookies to keep you signed in and to secure email-confirmation and password-reset links, short-lived cookies that protect the YouTube connection flow, a cookie that remembers whether the sidebar is collapsed, and local storage that remembers your library view and other preferences. There are no advertising or analytics cookies and no third-party tracking. See <a href="#cookies">Cookies and browser storage</a>.</p>
+            <p><strong>Who receives your data.</strong> Sifteriq shares information with the service providers that run it: Google and YouTube (the video IDs it looks up, the videos you play in Sifteriq with YouTube's player and, if you connect, your Google authorization and the playlist and videos each request involves); YouTube's image servers, which your browser contacts to load thumbnails; Supabase, which stores Sifteriq's data and runs sign-in; and OpenRouter and the AI providers it routes to, which receive video details and your goal for the AI features, only if you turn on AI recommendations and agree to the AI notice (each named in <a href="#ai-who">Who processes it</a>). Otherwise, Sifteriq discloses information only when the law requires it, to protect the rights, safety or security of its users or others, or if Sifteriq changes hands. Today the app and its background worker run on the developer's own computer in Egypt, not at a hosting provider. We do not sell your data or share it for advertising. See <a href="#sharing">Who we share information with</a>.</p>
+            <p><strong>Cookies and storage on your device.</strong> The Sifteriq app uses cookies to keep you signed in and to secure email-confirmation and password-reset links, short-lived cookies that protect the YouTube connection flow, a cookie that remembers whether the sidebar is collapsed, and browser storage that remembers your library view and other preferences. Sifteriq sets no advertising or analytics cookies. YouTube's embedded player, which loads only when you play a video in Sifteriq, may set its own cookies, as Google's Privacy Policy describes. See <a href="#cookies">Cookies and browser storage</a>.</p>
             <p><strong>Contact.</strong> Questions or complaints about Sifteriq's privacy practices: <a href="mailto:abdoelsmany66@gmail.com">abdoelsmany66@gmail.com</a>. See also <a href="#contact">Contact</a>.</p>
           </section>
 
           <section aria-labelledby="collect">
             <h2 id="collect">Information we collect</h2>
-            <p>We collect information from you, from YouTube and Google when you import or connect, from AI providers (the results they return), and from your browser.</p>
+            <p>We collect information from you, from YouTube and Google when you import, connect or play videos, from AI providers (the results they return), and from your browser.</p>
             <div class="table-wrap">
               <table class="stack">
                 <thead>
@@ -228,7 +237,7 @@
                   </tr>
                   <tr>
                     <th scope="row">Settings</th>
-                    <td data-label="What it includes">The goal you write (up to 500 characters), your removal preference, and whether AI triage is on, with the time you turned it on and the version of the AI notice you agreed to.</td>
+                    <td data-label="What it includes">The goal you write (up to 500 characters); whether AI recommendations are on, with the time you turned them on and the version of the AI notice you agreed to; and your account's monthly AI budgets, with the month you signed up.</td>
                   </tr>
                   <tr>
                     <th scope="row">YouTube connection (optional)</th>
@@ -236,19 +245,27 @@
                   </tr>
                   <tr>
                     <th scope="row">Imported videos</th>
-                    <td data-label="What it includes">For each video: its ID and link, the date it was added to your list, the playlist name, the title from your file or playlist, its position in the playlist, and whether it was later removed there; plus the public details listed in <a href="#yt-access">What Sifteriq accesses from YouTube and Google</a>.</td>
+                    <td data-label="What it includes">For each video: its ID and link, the date it was added to your list, the playlist name (for a file import, the file's name), the title from your file or playlist, its position in the playlist, and whether it was later removed there; plus the public details listed in <a href="#yt-access">What Sifteriq accesses from YouTube and Google</a>.</td>
                   </tr>
                   <tr>
                     <th scope="row">Imports</th>
-                    <td data-label="What it includes">For each import: the file name (or "Pasted URLs"), the detected format, counts, duplicates, and entries Sifteriq could not read. Uploaded files are processed in memory and not stored. If you upload a decisions file produced by your own AI tool (Settings → Advanced), Sifteriq stores the videos, decisions, reasons, topics and scores it contains, and keeps each entry of the file as it is, alongside the result.</td>
+                    <td data-label="What it includes">For each import: the file name (or "Pasted URLs"), the detected format, counts, duplicates, and entries Sifteriq could not read. Uploaded files are processed in memory and not stored.</td>
                   </tr>
                   <tr>
                     <th scope="row">What you create</th>
-                    <td data-label="What it includes">Notes (up to 5,000 characters per video), viewing status, decisions, watch plans and exports.</td>
+                    <td data-label="What it includes">Notes (up to 5,000 characters per video); viewing status, such as watched; decisions; watch plans, including the parts of long videos you marked done; saved views (named sorts and filters, such as a search, a channel or a lane, up to 12 on each of the Library, Review and Groups pages, with the goal they were saved under); snoozes (videos you set aside on Today or in Insights, and until when); your choices in Groups (videos you marked as covered and pairs you marked as not the same) and about duplicate copies (copies you marked as not duplicates, or the copy to keep); and exports.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Watch progress</th>
+                    <td data-label="What it includes">For videos you play in Sifteriq: where you stopped, how long you played, whether you are partway through, and when it was saved (see <a href="#yt-player">Playing videos in Sifteriq</a>). Nothing is recorded for videos made for kids.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Duplicate copies</th>
+                    <td data-label="What it includes">Groups of saved videos that are copies of the same video, which Sifteriq finds by fixed rules that compare titles, channels, lengths and publish dates, without AI.</td>
                   </tr>
                   <tr>
                     <th scope="row">AI results</th>
-                    <td data-label="What it includes">For each video: topic, content type, difficulty, priority score, suggested decision, freshness risk, a possible-duplicate key, a short reason and the model used. For each AI request: which videos it covered, token counts, cost and the provider's raw response. For each video, a count of failed AI attempts. Results imported from a decisions file you upload are stored the same way, marked as imported. If you agreed to the AI notice of 13 October 2026, also: for each video, an embedding and a summary (its topic, names it mentions, what it covers, its type, level and how time-sensitive it is) with the AI's answer as returned; for each goal you use, the goal's text, its profile and an embedding of it; for each video and goal, a ranking (a score, a suggested decision and, for the top videos, a short reason); and for two videos that may be copies, how alike their embeddings are and the AI's duplicate check.</td>
+                    <td data-label="What it includes">Only if you turned on AI recommendations and agreed to the AI notice. For each video: a summary (its topic, names it mentions, what it covers, what it is worth watching for, its type, level, how time-sensitive it is and what kind of keep it is), with the AI's answer as returned, and its embeddings. For each goal you use: the goal's text, its AI profile and an embedding of it. For each video and goal: a ranking (how well it fits the goal, a suggested decision, a short reason when the AI judged it, and its place in the order). For Groups: the answers TypeSafe's and Microsoft Azure's models gave about pairs of your videos, each with a fingerprint (hash) of its exact input and the model that answered, the pairs decided to cover the same thing, and counts of what the Groups step did. For each AI request: the task, model, token counts, cost, the provider's request ID and whether it succeeded, but not the text sent or returned.</td>
                   </tr>
                   <tr>
                     <th scope="row">YouTube actions</th>
@@ -256,17 +273,17 @@
                   </tr>
                   <tr>
                     <th scope="row">Service and security records</th>
-                    <td data-label="What it includes">Sync history, YouTube quota use, security events (connecting or disconnecting YouTube, choosing a playlist, removals, turning AI triage on or off, clearing your library, deleting your account), and request logs with the route, status, timing and a one-way hash of your user ID.</td>
+                    <td data-label="What it includes">Sync history, YouTube quota use, AI use and spend against your monthly budgets, counts of taps in Groups (without video IDs), security events (connecting or disconnecting YouTube, choosing a playlist, removals, turning AI recommendations on or off, clearing your library, deleting your account), and request logs with the route, the address requested (which can include a video's ID), status, timing and a one-way hash of your user ID.</td>
                   </tr>
                   <tr>
                     <th scope="row">Browser storage</th>
-                    <td data-label="What it includes">Cookies and local storage, listed in <a href="#cookies">Cookies and browser storage</a>.</td>
+                    <td data-label="What it includes">Cookies and local and session storage, listed in <a href="#cookies">Cookies and browser storage</a>.</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <p id="takeout"><strong>Google Takeout files.</strong> Sifteriq reads every text file (CSV, TXT, HTML or JSON) in your archive whose folder or file name mentions YouTube, Watch Later or playlists. Today that covers every text file in a YouTube Takeout export: Sifteriq imports every video linked or listed in those files, for example from your watch history, likes, comments or your own uploads, and keeps up to 12 entries it could not read, such as channel or search links, in the import record. We therefore recommend exporting only your playlists from Google Takeout. <span class="launch">At launch</span> It imports videos only from Watch Later and playlist files, and ignores all other files, such as watch history, likes and comments.</p>
-            <p>Sifteriq's own code does not record your IP address. Our sign-in provider stores it, with your browser type, for each signed-in session in our database (see Account above), and records it in its own service logs. Once Sifteriq has a hosting provider, that provider's logs may record it too (see <a href="#sharing">Who we share information with</a>). We do not collect payment details, precise location, contacts or government identifiers.</p>
+            <p>Sifteriq's own code does not record your IP address. Our sign-in provider stores it, with your browser type, for each signed-in session in our database (see Account above), and records it in its own service logs. YouTube receives it when your browser loads thumbnails or the embedded player. Once Sifteriq has a hosting provider, that provider's logs may record it too (see <a href="#sharing">Who we share information with</a>). We do not collect payment details, precise location, contacts or government identifiers.</p>
           </section>
 
           <section aria-labelledby="use">
@@ -278,8 +295,13 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">Run your account and the features you use: importing, video details, library, review, watch plans and exports</th>
-                    <td data-label="Information used">Account, settings, imported videos, what you create</td>
+                    <th scope="row">Run your account and the features you use: importing, video details, library, review, Today, Groups, duplicate copies, saved views, snoozes, watch plans and exports</th>
+                    <td data-label="Information used">Account, settings, imported videos, what you create, duplicate copies</td>
+                    <td data-label="Legal basis (EEA and UK)">Performing our contract with you</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Play videos in Sifteriq and remember where you stopped</th>
+                    <td data-label="Information used">Imported videos, watch progress (see <a href="#yt-player">Playing videos in Sifteriq</a>)</td>
                     <td data-label="Legal basis (EEA and UK)">Performing our contract with you</td>
                   </tr>
                   <tr>
@@ -288,18 +310,13 @@
                     <td data-label="Legal basis (EEA and UK)">Your consent, which you can withdraw by disconnecting</td>
                   </tr>
                   <tr>
-                    <th scope="row">AI triage</th>
+                    <th scope="row">AI recommendations: video summaries, goal profiles, ranking, embeddings and Groups</th>
                     <td data-label="Information used">Video details and your goal (see <a href="#ai">AI processing</a>)</td>
-                    <td data-label="Legal basis (EEA and UK)">Your consent, which you can withdraw by turning AI triage off</td>
+                    <td data-label="Legal basis (EEA and UK)">Your consent to the AI notice, which you can withdraw by turning AI recommendations off</td>
                   </tr>
                   <tr>
-                    <th scope="row">Embeddings, video summaries, goal ranking and duplicate checks</th>
-                    <td data-label="Information used">Video details and your goal (see <a href="#ai-more">Embeddings, video summaries and goal ranking</a>)</td>
-                    <td data-label="Legal basis (EEA and UK)">Your consent to the AI notice of 13 October 2026, which you can withdraw by turning AI triage off</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Keep Sifteriq secure, prevent abuse, fix problems and control costs</th>
-                    <td data-label="Information used">Service and security records; the session details and log of account events in Account</td>
+                    <th scope="row">Keep Sifteriq secure, prevent abuse, fix problems and control costs, including monthly AI budgets</th>
+                    <td data-label="Information used">Service and security records; the session details and log of account events in Account; your monthly AI budgets</td>
                     <td data-label="Legal basis (EEA and UK)">Our legitimate interests in keeping the service and its users' data safe and running within budget</td>
                   </tr>
                   <tr>
@@ -320,34 +337,35 @@
 
           <section aria-labelledby="ai">
             <h2 id="ai">AI processing</h2>
-            <p>If you turn on AI triage, Sifteriq uses a large language model to suggest what to do with each video, for example watch now, watch this week, keep for reference, or skip. Videos are sent in batches of up to 20.</p>
-            <h3 id="ai-sent">What is sent</h3>
+            <p>Sifteriq's AI features run only if you turn on <strong>AI recommendations</strong> and agree to the AI notice Sifteriq shows first, which lists each request below, what it sends and who receives it. With your agreement, Sifteriq uses AI models to describe each saved video, understand your goal, rank your videos for it, and find saved videos that cover the same thing (Groups). There is one ranking system: every recommendation comes from these steps. A video the AI has not reached yet shows as "not ranked yet", with the reason.</p>
+            <h3 id="ai-sent">What is sent, step by step</h3>
             <ul>
-              <li><strong>For each video:</strong> title, channel name, duration, publish year and how old the video is (under 12 months, 12 to 18 months, or over 18 months), up to 16 of its YouTube tags, and the first 1,200 characters of the description. Each video is labeled with a temporary number (v01, v02 and so on), not its YouTube ID.</li>
-              <li><strong>For each batch:</strong> the goal you wrote.</li>
-              <li><strong>Never sent:</strong> your name, email address, user ID, YouTube channel, video IDs, playlist names, notes or uploaded files.</li>
+              <li><strong>Video summaries</strong>, to one of the AI model providers: for each video, its title, channel name, duration, publish year and how old it is (under 12 months, 12 to 18 months, or over 18 months), up to 16 of its YouTube tags and the first 1,200 characters of its description, in requests of up to 20 videos. Each video is labeled with a temporary number (v01, v02 and so on), not its YouTube ID. Your goal is not sent. The AI writes a short summary of each video: its topic, names it mentions, what it covers, what it is worth watching for, its type, its level and how time-sensitive it is.</li>
+              <li><strong>Your goal</strong>, to one of the AI model providers: the goal you wrote, on its own, so the AI turns it into a short profile of what it asks for (topics, level, preferred length, how recent, what to leave out). Sifteriq shows this profile in Settings.</li>
+              <li><strong>Ranking</strong>, to one of the AI model providers: your goal with Sifteriq's summaries of up to 100 videos a request and each video's length and age, each under a temporary number, so the AI ranks the videos for your goal and gives a short reason. Titles, descriptions and video IDs are not sent with these requests.</li>
+              <li><strong>Embeddings</strong>, to DeepInfra or Nebius: for each video, its title, chapter titles, the first 500 characters of its description (without links, hashtags or timestamps) and up to 16 of its tags; its title alone and its topic from the summary (up to 300 characters each); and your goal on its own. They turn each text into a list of numbers (an embedding). Sifteriq uses these to compare videos with your goal and to find videos that may cover the same thing, and never shows or exports them.</li>
+              <li><strong>Groups</strong>, to TypeSafe and Microsoft Azure: see <a href="#ai-groups">Groups</a> below.</li>
+              <li><strong>Never sent:</strong> your name, email address, user ID, YouTube channel, video, channel or playlist IDs, playlist names, notes, watch progress, snoozes, saved views or uploaded files.</li>
             </ul>
-            <p>If you agree to the AI notice of 13 October 2026, Sifteriq also sends what <a href="#ai-more">Embeddings, video summaries and goal ranking</a> describes.</p>
-            <h3 id="ai-more">Embeddings, video summaries and goal ranking</h3>
-            <p>Sifteriq has more AI features that run only if you agreed to its AI notice of 13 October 2026 or a later one, which names each request below and who receives it. Sifteriq shows that notice when you turn on AI triage, or asks you to review it in Settings → Account if you turned AI triage on under an earlier notice; AI triage keeps working either way. Today Sifteriq offers that notice only to its developer's account, and every other account is offered the earlier notice, without these features. With your agreement, Sifteriq also sends:</p>
+            <h3 id="ai-groups">Groups: saved videos that cover the same thing</h3>
+            <p>Groups shows saved videos that cover the same thing, such as the same release, news story, talk or question, so you can start with one and see what each of the others adds. To find them, a small model that runs on Sifteriq's own worker, with no network access, compares the embeddings and the videos' details and picks likely pairs. For each likely pair, Sifteriq sends:</p>
             <ul>
-              <li><strong>For embeddings, to DeepInfra or Nebius:</strong> for each video, its title, its chapter titles, the first 500 characters of its description (without links, hashtags or timestamps) and up to 16 of its YouTube tags; and your goal on its own. They turn each text into a list of numbers (an embedding). Sifteriq uses these to compare videos with each other and with your goal, for example to find duplicate saves.</li>
-              <li><strong>For video summaries:</strong> the details listed in <a href="#ai-sent">What is sent</a> for each video, without your goal, so the AI writes a short summary of it: its topic, names it mentions, what it covers, its type, its level and how time-sensitive it is.</li>
-              <li><strong>For your goal:</strong> your goal on its own, so the AI turns it into a short profile of what the goal asks for, such as its topics, level and preferred length.</li>
-              <li><strong>For ranking:</strong> your goal with Sifteriq's summaries of your videos and each video's length and age, so the AI ranks your videos for the goal. Titles and descriptions are not sent with these requests.</li>
-              <li><strong>For duplicate checks:</strong> for two videos that may be the same, each one's title, length, publish year and up to 500 characters of its description, with whether they share a channel and a length, so the AI judges whether they are copies.</li>
+              <li><strong>To TypeSafe</strong> (its Jev model), for each of the two videos: its title (up to 300 characters), publish date, length, language, up to 8 of its tags (leaving out tags its channel puts on most of its videos), the start of its description (up to 500 characters, without links, timestamp lines or lines its channel repeats), its chapter titles (up to 300 characters) and its topic from Sifteriq's summary; and four facts Sifteriq works out: whether both come from the same channel, whether their lengths match, how far apart their lengths are and the days between their publish dates. TypeSafe's model answers a fixed set of questions about the pair, one pair per request.</li>
+              <li><strong>To Microsoft Azure</strong> (OpenAI's GPT-6.1 Sol model running on Azure), only for the pairs TypeSafe's answers leave uncertain: the same details without the topics, up to 10 pairs per request, each pair under a temporary number. The model decides how each pair relates.</li>
             </ul>
-            <p>The requests for summaries, goal profiles, rankings and duplicate checks go through OpenRouter to the same AI model providers as AI triage; the embedding requests go through OpenRouter only to DeepInfra or Nebius (see <a href="#ai-who">Who processes it</a>). None of these requests includes anything listed under "Never sent" above. Sifteriq stores the results with your library and deletes them as described in <a href="#retention">How long we keep information</a>. It never shows or exports the embeddings. Where it shows the summaries, rankings or duplicate checks, they are its own estimates (see <a href="#ai-labels">AI labels</a>). Turning AI triage off stops all of these requests.</p>
+            <p>Groups requests never include channel names, video, channel or playlist IDs, or your goal. Sifteriq stores each answer with a fingerprint (hash) of its exact input and the model that answered, so it never pays to ask the same question twice, and stores the pairs decided to cover the same thing. Groups themselves are worked out each time you open them and are not stored; the server keeps the last result in memory for up to a minute. Sifteriq deletes each answer and decision 28 days after the earlier time it fetched the two videos' details from YouTube (unless a refresh finds both unchanged), when either video's details are not refreshed within 28 days, and when either video leaves your library.</p>
+            <p><strong>Temporary files.</strong> While the Groups step runs, Sifteriq's background worker keeps one folder for your library on its own disk, with a working copy of your videos' details, summaries, embeddings and stored answers. It deletes the working copy as soon as it has read the result, or when the step fails; keeps only the scores of your current library and a copy of your embeddings that matches the database; and deletes the whole folder when Groups cannot run for you (for example after you turn AI recommendations off), after the deletion that follows a disconnect, and at its next maintenance pass (about every 5 minutes while the worker runs) once the folder has not been used for 24 hours or you have cleared your library, disconnected YouTube or deleted your account. Today the worker runs only on the developer's computer, so it deletes these files the next time it runs.</p>
+            <h3 id="ai-budgets">Monthly AI budgets</h3>
+            <p>Sifteriq is free, so each account has monthly budgets for what its AI requests may cost: one for the summaries, goal profile, ranking and embeddings, and one for Groups, both larger in the month you sign up. Daily limits and a limit for all accounts together also apply. A request that would go over a budget is not sent: Sifteriq pauses that step until the budget renews, keeps what it already made, and shows why in the app. Sifteriq records each request's tokens and cost to enforce these budgets (see <a href="#collect">Information we collect</a>).</p>
             <h3 id="ai-who">Who processes it</h3>
             <p>OpenRouter, Inc. (United States), an AI gateway, forwards each request to a model provider that runs the model and returns the result. OpenRouter also sorts a small sample of requests into anonymous categories, using a model that keeps no data, for its public usage rankings. Sifteriq does not train any AI model on your data.</p>
-            <p>OpenRouter sends each request for AI triage, video summaries, goal profiles, rankings and duplicate checks to one of four model providers: Together AI, Makora, Ionstream and Parasail. Together AI, Ionstream and Parasail are based in the United States; Makora is run by A2 Labs Inc., whose privacy policy names service providers in the United States. It sends each embedding request to one of two model providers: DeepInfra, run by DeepInfra, Inc., based in the United States; or Nebius, run by Nebius Group N.V., based in the Netherlands, whose privacy policy names group companies in the Netherlands, Israel and the United States. Sifteriq asks for zero data retention on every request, so OpenRouter sends it only to endpoints that OpenRouter lists as keeping no prompts or outputs after responding. Your data is therefore not stored by these model providers or used by them to train AI models.</p>
-            <p>You can also upload a decisions file produced by your own AI tool (Settings → Advanced). Sifteriq stores the suggestions in it as described in <a href="#collect">Information we collect</a>. That file is not sent to OpenRouter or any model provider.</p>
+            <p>OpenRouter sends each request for video summaries, goal profiles and ranking to one of four model providers: Together AI, Makora, Ionstream and Parasail. Together AI, Ionstream and Parasail are based in the United States; Makora is run by A2 Labs Inc., whose privacy policy names service providers in the United States. It sends each embedding request to one of two model providers: DeepInfra, run by DeepInfra, Inc., based in the United States; or Nebius, run by Nebius Group N.V., based in the Netherlands, whose privacy policy names group companies in the Netherlands, Israel and the United States. It sends each Groups question to TypeSafe, run by Typesafe AI, Inc., whose services are hosted in the United States; and each uncertain Groups pair to Microsoft Azure, run by Microsoft Corporation, based in the United States, at an Azure endpoint in the United States or the European Union, or at one whose region OpenRouter does not state. Sifteriq asks for zero data retention on every request, so OpenRouter sends it only to endpoints that OpenRouter lists as keeping no prompts or outputs after responding. Your data is therefore not stored by these model providers or used by them to train AI models.</p>
             <h3 id="ai-choice">Your choice</h3>
-            <p>AI triage is off until you turn it on. Sifteriq asks before it first sends your videos to an AI provider, and you can turn it off at any time with the <strong>AI recommendations</strong> switch in Settings → Account. Sifteriq then sends no new requests. Recommendations it already made stay in your library and are kept as described in <a href="#retention">How long we keep information</a>. Without AI triage you can still import, organize and review your videos yourself.</p>
-            <p>When AI triage is on, your goal goes to the AI provider with each batch, and to the AI providers described in <a href="#ai-more">Embeddings, video summaries and goal ranking</a> if you agreed to that notice. Please do not put sensitive personal information in it, such as health details, religious or political views, or anything that identifies you.</p>
+            <p>AI recommendations are off until you turn them on. Sifteriq shows the AI notice and asks before it first sends your videos to an AI provider, and you can turn AI recommendations off at any time with the <strong>AI recommendations</strong> switch in Settings → Account. Sifteriq then sends none of these requests, Groups included. Results it already made stay in your library and are kept as described in <a href="#retention">How long we keep information</a>. When a new version of the notice names a new recipient or a new kind of data, Sifteriq stops sending until you agree to it. Without AI you can still import, organize, review and play your videos yourself, and Sifteriq still finds duplicate copies by its fixed rules.</p>
+            <p>When AI recommendations are on, your goal goes to the AI model providers for its profile and for ranking, and to the embedding providers. Please do not put sensitive personal information in it, such as health details, religious or political views, or anything that identifies you.</p>
             <h3 id="ai-labels">AI labels are Sifteriq's own estimates</h3>
-            <p><strong>Sifteriq's recommendations, priority scores, topics, reasons, video summaries, rankings and duplicate checks are generated independently by Sifteriq and are not sourced directly from YouTube's API.</strong> YouTube does not provide or endorse them. They can be wrong, so check them before you act on them, especially before removing videos from YouTube. Sifteriq labels these fields in the app and in exports as its own estimates, not data from YouTube; results from a decisions file you upload are labeled as imported from that file.</p>
-            <p>AI triage classifies videos, not people. The profile of a goal describes what the goal asks for, not you. Sifteriq does not use AI to profile you or to infer sensitive characteristics about you. Watch plans are built by fixed rules, without AI.</p>
+            <p><strong>Sifteriq's video summaries (what a video covers and what it is worth watching for), fit labels, rankings, reasons, goal profiles, Groups (which videos cover the same thing, the video to start with and what each other video adds) and duplicate-copy groups are generated independently by Sifteriq and are not sourced directly from YouTube's API.</strong> YouTube does not provide or endorse them. They can be wrong, so check them before you act on them, especially before removing videos from YouTube. Sifteriq labels these fields in the app and in exports as its own estimates, not data from YouTube. Watch progress and watched marks are Sifteriq's own record of what you played, not a YouTube metric.</p>
+            <p>Sifteriq's AI describes and compares videos, not people. The profile of a goal describes what the goal asks for, not you. Sifteriq does not use AI to profile you or to infer sensitive characteristics about you. Watch plans, which follow your rankings, and the video a group starts with are put together by fixed rules, without a further AI request; they may use your watch progress.</p>
           </section>
 
           <section aria-labelledby="sharing">
@@ -372,6 +390,12 @@
                     <td data-label="Location">United States and Google's global infrastructure</td>
                   </tr>
                   <tr>
+                    <th scope="row">YouTube's embedded player (Google)</th>
+                    <td data-label="What it does for Sifteriq">Plays videos in Sifteriq when you choose to (see <a href="#yt-player">Playing videos in Sifteriq</a>)</td>
+                    <td data-label="Information it receives">Sent by your browser: your IP address, browser details, the video you play, the Sifteriq site address, and what the player collects while you watch, as Google's Privacy Policy describes</td>
+                    <td data-label="Location">Google's global infrastructure</td>
+                  </tr>
+                  <tr>
                     <th scope="row">YouTube's image servers (Google)</th>
                     <td data-label="What it does for Sifteriq">Serve video thumbnails. Sifteriq stores each thumbnail's web address, and your browser loads every thumbnail straight from YouTube.</td>
                     <td data-label="Information it receives">Your IP address, browser details and the Sifteriq site address, sent by your browser</td>
@@ -385,20 +409,26 @@
                   </tr>
                   <tr>
                     <th scope="row">AI model providers, reached through OpenRouter</th>
-                    <td data-label="What it does for Sifteriq">Run the AI model</td>
-                    <td data-label="Information it receives">The same as OpenRouter, except the embedding requests. These providers are Together AI, Makora, Ionstream and Parasail, and each request goes only to an endpoint that keeps no prompts or outputs after responding (zero data retention; see <a href="#ai-who">Who processes it</a>).</td>
+                    <td data-label="What it does for Sifteriq">Write video summaries and goal profiles, and rank videos for your goal</td>
+                    <td data-label="Information it receives">Only if you turn on AI recommendations and agree to the AI notice: the video details listed for summaries, your goal, and Sifteriq's summaries with each video's length and age (see <a href="#ai-sent">What is sent</a>). These providers are Together AI, Makora, Ionstream and Parasail, and each request goes only to an endpoint that keeps no prompts or outputs after responding (zero data retention; see <a href="#ai-who">Who processes it</a>).</td>
                     <td data-label="Location">United States for Together AI, Ionstream and Parasail; Makora's privacy policy names service providers in the United States</td>
                   </tr>
                   <tr>
                     <th scope="row">Embedding providers, reached through OpenRouter</th>
                     <td data-label="What it does for Sifteriq">Turn video details and your goal into embeddings</td>
-                    <td data-label="Information it receives">Only if you agreed to the AI notice of 13 October 2026: each video's title, chapter titles, the start of its description and up to 16 of its tags, and your goal on its own (see <a href="#ai-more">Embeddings, video summaries and goal ranking</a>). These providers are DeepInfra, Inc. and Nebius (Nebius Group N.V.), and each request goes only to an endpoint that keeps no prompts or outputs after responding (zero data retention; see <a href="#ai-who">Who processes it</a>).</td>
+                    <td data-label="Information it receives">Only if you turn on AI recommendations and agree to the AI notice: each video's title, chapter titles, the start of its description and up to 16 of its tags; its title and its topic on their own; and your goal on its own (see <a href="#ai-sent">What is sent</a>). These providers are DeepInfra, Inc. and Nebius (Nebius Group N.V.), and each request goes only to an endpoint that keeps no prompts or outputs after responding (zero data retention; see <a href="#ai-who">Who processes it</a>).</td>
                     <td data-label="Location">United States for DeepInfra; the Netherlands for Nebius, whose privacy policy also names group companies in Israel and the United States</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Groups providers, reached through OpenRouter</th>
+                    <td data-label="What it does for Sifteriq">Judge whether two of your saved videos cover the same thing</td>
+                    <td data-label="Information it receives">Only if you turn on AI recommendations and agree to the AI notice: for pairs of your videos, each one's title, publish date, length, language, up to 8 tags, the start of its description, its chapter titles and (for TypeSafe) its topic, with whether they share a channel and how far apart their lengths and publish dates are; never channel names, IDs or your goal (see <a href="#ai-groups">Groups</a>). These providers are TypeSafe (Typesafe AI, Inc.) and Microsoft Azure (Microsoft Corporation), and each request goes only to an endpoint that keeps no prompts or outputs after responding (zero data retention; see <a href="#ai-who">Who processes it</a>).</td>
+                    <td data-label="Location">United States for TypeSafe; Microsoft Azure endpoints in the United States or the European Union, or one whose region OpenRouter does not state</td>
                   </tr>
                   <tr>
                     <th scope="row"><span class="launch">At launch</span> Our hosting provider</th>
                     <td data-label="What it does for Sifteriq">Will run the Sifteriq app and its background worker</td>
-                    <td data-label="Information it receives">Information passing through the app, and server logs that may include IP addresses</td>
+                    <td data-label="Information it receives">Information passing through the app, the background worker's temporary files (see <a href="#ai-groups">Groups</a>), and server logs that may include IP addresses</td>
                     <td data-label="Location">We will name the provider and its location here.</td>
                   </tr>
                   <tr>
@@ -418,7 +448,7 @@
 
           <section aria-labelledby="cookies">
             <h2 id="cookies">Cookies and browser storage</h2>
-            <p>The Sifteriq app uses only the cookies and browser storage it needs to sign you in, protect sign-in flows, and remember your preferences. <strong>There are no advertising or analytics cookies and no third-party tracking.</strong></p>
+            <p>The Sifteriq app uses only the cookies and browser storage it needs to sign you in, protect sign-in flows, and remember your preferences. <strong>Sifteriq sets no advertising or analytics cookies and runs no third-party tracking.</strong> Your saved views and snoozes are stored with your account, not in your browser.</p>
             <div class="table-wrap">
               <table class="stack">
                 <thead>
@@ -452,13 +482,20 @@
                   <tr>
                     <th scope="row"><code>sifteriq:*</code> keys</th>
                     <td data-label="Type">Local storage in your browser</td>
-                    <td data-label="Purpose">Remember library sorting and filters, saved views, snoozed and dismissed suggestions, first-run progress, when the YouTube connection was last checked, and your keyboard-shortcut setting</td>
+                    <td data-label="Purpose">Remember your library sorting and filters (including any search text and channel you filter by), first-run progress, when the YouTube connection was last checked, your keyboard-shortcut setting, your choices about watch check-ins, and which videos you opened on YouTube recently, so Sifteriq asks about each one at most once (kept up to 28 days)</td>
                     <td data-label="How long">Cleared when you sign out or delete your account. In any other browser, the ones linked to your account are cleared the next time Sifteriq opens there without a signed-in session.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><code>sifteriq:return-check-in:*</code></th>
+                    <td data-label="Type">Session storage in your browser</td>
+                    <td data-label="Purpose">When you open a video on YouTube from Sifteriq, remembers it (the video, its length and when you left the tab, no title) so Sifteriq can ask whether you watched it when you come back. Your answer is saved only if you give one.</td>
+                    <td data-label="How long">Until you answer, sign out or close the tab</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <p>Because all of these are needed for the service or remember your own choices, Sifteriq does not show a cookie banner. If we ever add analytics or advertising, we will ask for your consent first where the law requires it.</p>
+            <p><strong>YouTube's embedded player.</strong> When you play a video in Sifteriq, YouTube's player loads from YouTube in privacy-enhanced mode and may place, read or recognize its own cookies or similar technologies, as Google's Privacy Policy describes. Sifteriq does not control them, and the player loads only when you choose to watch a video in Sifteriq (see <a href="#yt-player">Playing videos in Sifteriq</a>).</p>
+            <p>Because Sifteriq's own cookies and storage are needed for the service or remember your own choices, Sifteriq does not show a cookie banner. If we ever add analytics or advertising, we will ask for your consent first where the law requires it.</p>
           </section>
 
           <section aria-labelledby="retention">
@@ -469,27 +506,32 @@
                   <tr><th scope="col">Information</th><th scope="col">How long</th></tr>
                 </thead>
                 <tbody>
-                  <tr><th scope="row">Account and settings, other than the log of account events</th><td data-label="How long">Until you delete your account. The details of a session are deleted sooner, when you sign out.</td></tr>
+                  <tr><th scope="row">Account and settings, other than the log of account events</th><td data-label="How long">Until you delete your account. The details of a session are deleted sooner, when you sign out. Your monthly AI budgets are kept with your account.</td></tr>
                   <tr><th scope="row">Our sign-in provider's own service logs, including the log of account events and IP addresses</th><td data-label="How long">A short period set by our Supabase plan.</td></tr>
                   <tr><th scope="row">Your library, notes, decisions and import history</th><td data-label="How long">Until you clear your library or delete your account. You can edit or clear a note at any time.</td></tr>
                   <tr><th scope="row">Watch plans</th><td data-label="How long">Until you delete them, clear your library or delete your account.</td></tr>
+                  <tr><th scope="row">Watch progress</th><td data-label="How long">28 days after it was last saved; sooner when the video leaves your library (for example when you clear your library or disconnect YouTube), when you undo a watched mark, or when you delete your account.</td></tr>
+                  <tr><th scope="row">Snoozes</th><td data-label="How long">Until you snooze another video after the snooze has ended, the video leaves your library, or you delete your account.</td></tr>
+                  <tr><th scope="row">Saved views</th><td data-label="How long">Until you delete them or your account. Clearing your library or disconnecting YouTube keeps them but removes any channel they filter by; that channel is also removed once no video of it with details refreshed in the last 28 days is in your library.</td></tr>
                   <tr><th scope="row">Data from YouTube API Services, and copies of it in Sifteriq</th><td data-label="How long">Refreshed or deleted within 30 days, except as described in <a href="#thirty-days">30-day refresh or deletion</a>. For a connection that ended other than through Disconnect YouTube, or a playlist you replaced, see the next row; for export files, see Saved export files.</td></tr>
                   <tr><th scope="row">Data obtained through a YouTube connection you ended</th><td data-label="How long">Disconnecting in Sifteriq deletes it, normally at once. Today, after Sifteriq's access ends at Google, for example because you revoked it on Google's page, or after you switch to a different Google account, the videos imported through that connection are kept until you clear your library, disconnect YouTube in Sifteriq or delete your account, and the IDs of its channel and playlists until you disconnect YouTube in Sifteriq or delete your account; their names follow the 30-day rule. Today the videos imported from a playlist you replaced by choosing a different one to sync, and its ID, are kept in the same way (see <a href="#thirty-days">30-day refresh or deletion</a>). <span class="launch">At launch</span> Deleted within 7 days of disconnecting in Sifteriq or of switching to a different Google account (unless you switch back within 3 days), or within 30 days of revoking access on Google's page.</td></tr>
                   <tr><th scope="row">Encrypted Google refresh token</th><td data-label="How long">Until you disconnect or delete your account, or Google reports it revoked or expired; then deleted at once.</td></tr>
-                  <tr><th scope="row">AI results</th><td data-label="How long">The current result is kept while the video is in your library. A replaced result is deleted within 30 days after the cached copy of your library is rebuilt with its replacement (see <a href="#thirty-days">30-day refresh or deletion</a>).</td></tr>
-                  <tr><th scope="row">Technical records of AI requests, including the provider's raw responses</th><td data-label="How long">30 days, or until you delete your account, whichever comes first. Clearing your library deletes the videos they covered and the provider's responses within 7 days; the usage information, such as token counts and cost, stays until the 30 days pass, because it is needed to enforce usage limits.</td></tr>
-                  <tr><th scope="row">Counts of failed AI attempts for each video</th><td data-label="How long">Until you clear your library or delete your account.</td></tr>
-                  <tr><th scope="row">Embeddings of your videos</th><td data-label="How long">Kept while the video is in your library and the text Sifteriq built from its details stays the same. When that text changes, the embedding is replaced at the next sync or deleted within a day. Also deleted when the video's details are not refreshed from YouTube within 30 days, and when the video leaves your library, for example when you clear your library or delete your account. Sifteriq never shows or exports them.</td></tr>
                   <tr><th scope="row">Video summaries, and the rankings made from them</th><td data-label="How long">The current summary is kept while the video is in your library and its details are refreshed. A summary that is replaced, or whose details change, is deleted within 2 days. Every summary is deleted when the video's details are not refreshed from YouTube within 30 days, and when the video leaves your library. A ranking is deleted with its summary or with the profile of its goal.</td></tr>
-                  <tr><th scope="row">Goals you used, with their AI profiles</th><td data-label="How long">Each goal you use, with its AI profile and embedding, is deleted within 15 days after you last use that goal, and when you delete your account. Clearing your library does not delete them.</td></tr>
-                  <tr><th scope="row">Duplicate checks</th><td data-label="How long">How alike two videos' embeddings are, and the AI's check of the pair, are deleted when the embedding of either video is deleted or replaced, when either video's details are not refreshed from YouTube within 30 days, and when either video leaves your library.</td></tr>
+                  <tr><th scope="row">Embeddings of your videos, including the title and topic embeddings Groups uses</th><td data-label="How long">Kept while the video is in your library and the text Sifteriq built from its details stays the same. When that text changes, the embedding is replaced at the next sync or deleted within a day. Also deleted when the video's details are not refreshed from YouTube within 30 days, and when the video leaves your library, for example when you clear your library or delete your account. Sifteriq never shows or exports them.</td></tr>
+                  <tr><th scope="row">Goals you used, with their AI profiles</th><td data-label="How long">Each goal you use, with its AI profile and embedding, is deleted within 15 days after you last use that goal, and when you delete your account. Clearing your library does not delete them. A goal's text is also kept with a watch plan or saved view made under it, until you delete that plan or view, and with the record of a whole-library AI refresh you asked for, for up to 90 days.</td></tr>
+                  <tr><th scope="row">Groups answers and decisions</th><td data-label="How long">Each answer from TypeSafe's or Microsoft Azure's model, and each pair decided to cover the same thing, is deleted 28 days after the earlier time Sifteriq fetched the two videos' details from YouTube (unless a refresh finds both unchanged), when either video's details are not refreshed within 28 days, and when either video leaves your library, for example when you clear your library, disconnect YouTube or delete your account. Groups themselves are never stored.</td></tr>
+                  <tr><th scope="row">Your choices in Groups and about duplicate copies</th><td data-label="How long">Until the video leaves your library, you clear your library, or you delete your account.</td></tr>
+                  <tr><th scope="row">Groups' temporary files on the background worker</th><td data-label="How long">The working copy of your videos' details is deleted as soon as the Groups step has read its result. The whole folder is deleted when it has not been used for 24 hours, and when you turn AI recommendations off, clear your library, disconnect YouTube or delete your account, at the worker's next maintenance pass (see <a href="#ai-groups">Groups</a>).</td></tr>
+                  <tr><th scope="row">Counts of what you did in Groups</th><td data-label="How long">90 days. They hold no video IDs.</td></tr>
+                  <tr><th scope="row">Groups of duplicate copies</th><td data-label="How long">Worked out again at least every 7 days, and deleted 28 days after they were worked out or when a video leaves your library.</td></tr>
+                  <tr><th scope="row">Records of AI requests (task, model, token counts, cost and status; no text sent or returned)</th><td data-label="How long">30 days, or until you delete your account, whichever comes first. Clearing your library keeps them until the 30 days pass, because they are needed to enforce budgets and usage limits.</td></tr>
                   <tr><th scope="row">Saved export files</th><td data-label="How long">Download links expire after 15 minutes, and a file can no longer be downloaded 23 hours after it is made. Today the file itself is deleted at the next cleanup after that, which runs in Sifteriq's background worker and whenever you make another export. Clearing your library, disconnecting YouTube or deleting your account also deletes your saved files. <span class="launch">At launch</span> Each file is deleted within 24 hours after it is made.</td></tr>
                   <tr><th scope="row">Service records in our database (routine activity and sync history)</th><td data-label="How long">90 days; your 20 most recent sync runs are kept while your account exists.</td></tr>
                   <tr><th scope="row">Request logs at our hosting provider</th><td data-label="How long"><span class="launch">At launch</span> We will state the period here when we name the provider.</td></tr>
-                  <tr><th scope="row">YouTube quota use</th><td data-label="How long">Until you delete your account.</td></tr>
+                  <tr><th scope="row">YouTube quota use</th><td data-label="How long">90 days, or until you delete your account, whichever comes first.</td></tr>
                   <tr><th scope="row">Security events</th><td data-label="How long">While your account exists. The YouTube channel, playlist and video IDs in them are removed within 30 days of the event, and sooner when the data of the connection they belong to is deleted. The deletion records in the next row are kept afterwards.</td></tr>
                   <tr><th scope="row">Records that a library was cleared and that an account was deleted</th><td data-label="How long">Kept with no time limit after account deletion, to show the deletion happened (see <a href="#delete">Deleting your data</a>). Neither holds any identifier.</td></tr>
-                  <tr><th scope="row">Copies at AI providers</th><td data-label="How long">None kept by the model providers, including DeepInfra and Nebius, after the response (zero data retention). For OpenRouter's anonymous categorization sample, see <a href="#ai-who">Who processes it</a>.</td></tr>
+                  <tr><th scope="row">Copies at AI providers</th><td data-label="How long">None kept by the model providers, including DeepInfra, Nebius, TypeSafe and Microsoft Azure, after the response (zero data retention). For OpenRouter's anonymous categorization sample, see <a href="#ai-who">Who processes it</a>.</td></tr>
                   <tr><th scope="row">Browser storage</th><td data-label="How long">See <a href="#cookies">Cookies and browser storage</a>.</td></tr>
                 </tbody>
               </table>
@@ -504,17 +546,17 @@
               <li><strong>Access and portability:</strong> export your library as CSV, JSON or Markdown in Sifteriq, or ask us for a copy of your information.</li>
               <li><strong>Correction:</strong> edit your display name, goal and notes in Sifteriq, or ask us to correct something.</li>
               <li><strong>Deletion:</strong> clear your library, delete your account, or email us (see <a href="#delete">Deleting your data</a>).</li>
-              <li><strong>Withdrawing consent:</strong> disconnect YouTube, revoke access in your Google account, or turn off <strong>AI recommendations</strong> (AI triage) in Settings → Account. This does not affect processing that already took place.</li>
+              <li><strong>Withdrawing consent:</strong> disconnect YouTube, revoke access in your Google account, or turn off <strong>AI recommendations</strong> in Settings → Account. This does not affect processing that already took place.</li>
               <li><strong>Objection and restriction:</strong> object to processing based on our legitimate interests, or ask us to limit how we use your information.</li>
               <li><strong>Complaints:</strong> you can complain to the data protection authority where you live or work.</li>
             </ul>
             <p>To use any of these rights, email <a href="mailto:abdoelsmany66@gmail.com">abdoelsmany66@gmail.com</a>. We reply within one month, and may ask you to confirm that the account is yours. Using your rights will never affect how we treat you.</p>
-            <p><strong>What you must provide.</strong> An email address and password are needed to create an account. Connecting YouTube is optional: you can import from a file or pasted links instead. AI triage is optional too.</p>
+            <p><strong>What you must provide.</strong> An email address and password are needed to create an account. Connecting YouTube is optional: you can import from a file or pasted links instead. AI recommendations and playing videos in Sifteriq are optional too.</p>
           </section>
 
           <section aria-labelledby="transfers">
             <h2 id="transfers">International transfers</h2>
-            <p>Sifteriq is run from Egypt, and its service providers process information in other countries, including the United States and the Netherlands. Your information may therefore be processed outside the country where you live, in places whose data protection laws differ from yours. Where each provider processes data is listed in <a href="#sharing">Who we share information with</a>.</p>
+            <p>Sifteriq is run from Egypt, and its service providers process information in other countries, including the United States, the Netherlands and other countries of the European Union. Your information may therefore be processed outside the country where you live, in places whose data protection laws differ from yours. Where each provider processes data is listed in <a href="#sharing">Who we share information with</a>.</p>
             <p><span class="launch">At launch</span> Before Sifteriq opens to the public, we will put in place the data protection terms these providers offer for international transfers, such as the EU Standard Contractual Clauses, and list them here.</p>
           </section>
 
@@ -527,7 +569,7 @@
               <li>administrative keys kept on the server only;</li>
               <li>protection against cross-site request forgery and clickjacking, and a strict content security policy;</li>
               <li>a recent password sign-in before you can clear your library or delete your account;</li>
-              <li>limits on upload sizes and request rates;</li>
+              <li>limits on upload sizes and request rates, and a confirmation before every removal from YouTube;</li>
               <li><span class="launch">At launch</span> HTTPS encryption for every connection to the app.</li>
             </ul>
             <p>No system is perfectly secure. If a security breach affects your personal information, we will tell you, and the relevant authorities, where the law requires it.</p>
@@ -546,7 +588,7 @@
 
           <section aria-labelledby="children">
             <h2 id="children">Children</h2>
-            <p>Sifteriq is not directed to children. You must be at least 18 years old to use it. If we learn that someone under 18 has an account, we will delete it. If you think a child has given us personal information, please contact us. Sign-up asks you to confirm that you are at least 18.</p>
+            <p>Sifteriq is not directed to children. You must be at least 18 years old to use it. If we learn that someone under 18 has an account, we will delete it. If you think a child has given us personal information, please contact us. Sign-up asks you to confirm that you are at least 18. Sifteriq does not play videos that YouTube designates as made for kids inside Sifteriq, and records nothing about them.</p>
           </section>
 
           <section aria-labelledby="website">
@@ -557,13 +599,14 @@
 
           <section aria-labelledby="dnt">
             <h2 id="dnt">Do Not Track</h2>
-            <p>Sifteriq does not track you across other websites and does not let third parties do so, so it treats every visitor the same whether or not the browser sends a Do Not Track or Global Privacy Control signal. The third parties that can receive information while you use Sifteriq, such as YouTube's image servers, are listed in <a href="#sharing">Who we share information with</a>.</p>
+            <p>Sifteriq does not track you across other websites and does not let third parties do so, so it treats every visitor the same whether or not the browser sends a Do Not Track or Global Privacy Control signal. The third parties that can receive information while you use Sifteriq, such as YouTube's image servers and, when you play a video in Sifteriq, YouTube's embedded player, are listed in <a href="#sharing">Who we share information with</a>.</p>
           </section>
 
           <section aria-labelledby="changes">
             <h2 id="changes">Changes to this policy</h2>
             <p>We will update this policy as Sifteriq develops, including when it opens to the public. Each update changes the "Last updated" date above. For material changes, we will tell you in the app or by email at least 14 days before they take effect, unless a change is needed sooner for legal or security reasons.</p>
             <p>If we change how Sifteriq uses your Google or YouTube data, we will tell you and ask you to accept the updated policy, or to agree to a notice in the app that describes the new use, before we use your data in the new way.</p>
+            <p><strong>This version</strong>, effective [EFFECTIVE DATE], rewrites the policy for Sifteriq as it works now: one ranking system (video summaries, goal profiles, ranking and embeddings); Groups, with its two new AI recipients, TypeSafe and Microsoft Azure, what they receive and how long their answers are kept; playing videos in Sifteriq and watch progress; snoozes and saved views stored with your account; duplicate copies found by fixed rules; monthly AI budgets; and updated retention. It removes features Sifteriq no longer has, such as AI triage, AI duplicate checks, the removal preference and decisions-file uploads. Sifteriq asks every account, including its developer's, to accept this version and to agree to the updated AI notice before it sends anything to an AI provider again.</p>
             <p>Earlier versions of this policy are kept in the history of this website's public repository on GitHub.</p>
           </section>
 
